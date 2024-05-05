@@ -1,35 +1,63 @@
-\documentclass[12pt]{article}
-\usepackage{stmaryrd}
-\usepackage{graphicx}
-\usepackage[utf8]{inputenc}
-
-\usepackage[french]{babel}
-\usepackage[T1]{fontenc}
-\usepackage{hyperref}
-\usepackage{verbatim}
-
-\usepackage{color, soul}
-
-\usepackage{pgfplots}
-\pgfplotsset{compat=1.15}
-\usepackage{mathrsfs}
-
+\documentclass{article}
 \usepackage{amsmath}
-\usepackage{amsfonts}
 \usepackage{amssymb}
-\usepackage{tkz-tab}
-\author{\\Lycée de Dindéfelo\\Mr BA}
-\title{\textbf{Devoir $N^{\circ}1$ Second semestre}}
-\date{\today}
-\usepackage{tikz}
-\usetikzlibrary{arrows, shapes.geometric, fit}
-
-% Commande pour la couleur d'accentuation
-\newcommand{\myul}[2][black]{\setulcolor{#1}\ul{#2}\setulcolor{black}}
-\newcommand\tab[1][1cm]{\hspace*{#1}}
+\usepackage[margin=2cm]{geometry}
 
 \begin{document}
-\maketitle
-\newpage
-\section*{\underline{\textbf{\textcolor{red}{Exercice 1:}}}}
+
+\begin{minipage}{0.5\textwidth}
+	Ministère de l'éducation nationale  \\
+	Inspection académique de Kédougou   \\
+	Lycée de Dindéfelo            \\
+	Cellule de mathématiques            \\
+	M. BA                          \\
+	Classe : Tle  \\
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+	Année scolaire 2023-2024 \\
+	Date : 08-05-2024 \\
+	Durée : 3h 00 \\
+\end{minipage}
+
+\begin{center}
+	\textbf{{\underline{Devoir N1 Du Second Semestre}}}
+\end{center}
+
+\section*{Exercice 1 (4 points) :}
+1) Résoudre dans $\mathbb{R}$ les équations suivantes  (1 pt $\times$ 2)\\
+a)$\ln(x) = \ln(5 –x)$ ;\quad\quad  b)$\ln(5 –x)=-5$ \\
+2)Résoudre dans $\mathbb{R}$ les inéquations suivantes (1 pt $\times$ 2)\\
+d)$\ln(x-2)<0$ ;\quad\quad e)$1<\ln(5 –x)$
+\section*{Exercice 2 (11 points) :}
+Soit  $f$  la fonction définie par : $f(x) =\frac{x^{2}-2x+1}{x}$ .\\
+    1- a - Donner  l’ensemble de définition  Df .\textbf{(0,5pt)}\\
+b - Montrer que pour tout x $\in$ Df ; $f(x) =x-2+\frac{1}{x} $.\textbf{(1pt)}\\
+       2  - Etudier les limites de f aux bornes des intervalles de définition.\textbf{(2pts)}\\ 
+              En déduire que f admet une asymptote verticale.\textbf{(0,5pt)}\\
+       3 - Calculer  f'(x) puis étudier son signe. Dresser le tableau de variation de f \textbf{(2pt)}.\\
+             En déduire les extrema  de f.\textbf{(0,5pt)}\\
+        4 - Vérifier que  I (0 ; -2) est centre de symétrie de Cf.\textbf{(1pt)} \\
+        5 -  Montrer la droite (D) d’équation  y = x - 2  est une asymptote à (Cf).\textbf{(1pt)} \\
+             Etudier la position de (Cf) par rapport à (D).\textbf{(1pt)}\\
+         6 - Construire (Cf) dans un repère orthonormal.\textbf{(1,5pt)}\\
+\section*{Exercice 3 (6 points) :}
+Le tableau ci-dessous  donne la quantité de matière première X en tonnes (t) et le chiffre d’affaire Y en millions francs (f) d’une entreprise. On considère  la série double(x ; y) :
+
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline
+X & 2 & 2,5 & 3 & 3,5 & 4 & 4,5 & 5 \\
+\hline
+Y & 21 & 25 & 29 & 30 & 40 & 46 & 53\\
+\hline
+\end{tabular}\\
+\begin{itemize}
+\item[1)] Représenter le nuage de points.\\
+\item[2)] Calculer la variance de X et la variance de Y.\\
+\item[3)]  Calculer la covariance de X et Y.\\
+\item[4)] Calculer le coefficient de corrélation linéaire r.\\
+\item[5)] a)  Déterminer l équation de la droite de régression de Y en X puis la représenter\\
+\item[b)]  En déduire une estimation du chiffre d’affaire pour 8 tonnes de matière première.\\
+\item[c)]  Pour un chiffre d’affaire 100000000 calculer la quantité de matière première.
+
+\end{itemize}
 \end{document}
