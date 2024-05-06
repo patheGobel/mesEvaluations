@@ -1,0 +1,141 @@
+\documentclass[12pt]{article}
+\usepackage{stmaryrd}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\usepackage{verbatim}
+
+\usepackage{color, soul}
+
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tkz-tab}
+
+\usepackage{tikz}
+\usetikzlibrary{arrows, shapes.geometric, fit}
+
+
+\usepackage[margin=2cm]{geometry}
+\begin{document}
+
+\begin{minipage}{0.5\textwidth}
+	Ministère de l'éducation nationale  \\
+	Inspection académique de Kédougou   \\
+	Lycée de Dindéfélo            \\
+	Cellule de mathématiques            \\
+	M. BA                          \\
+	Classe : TS  \\
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+	Année scolaire 2023-2024 \\
+	Date : 14-05-2024 \\
+	Durée : 4h 00 \\
+\end{minipage}
+
+\begin{center}
+	\section*{\textcolor{red}{\underline{Correction du Devoir N1 Du Second Semestre}}}
+\end{center}
+\section*{\textcolor{red}{\underline{Exercice 1} (2 points) :}}
+Calcucler les limtes suivantes
+\[\lim_{x \to +\infty}\frac{\ln(x-1)}{2x-3}\quad\quad\lim_{x \to +\infty}\frac{\ln(x)}{\sqrt{x}}\]
+\section*{\textcolor{red}{\underline{Correction de l'exercice 1} (4 points) :}}
+\section*{\textcolor{red}{\underline{Exercice 2} (4 points) :}}
+1)Resoudre dans $\mathbb{C}$ l'équation $z^{4}=1$. \textbf{2pt}
+
+2)En déduire les solutions dans $\mathbb{C}$ de l'équation $\left[\left(\sqrt{3}-i\right)z+i  \right]^{4}$=1. \textbf{2pt}
+\section*{\textcolor{red}{\underline{Correction de l'exercice 2} (4 points) :}}
+\section*{\textcolor{red}{\underline{Exercice 3} (4 points) :}}
+Le plan complexe est muni d’un repère orthonormé $(O,\vec{u},\vec{v})$
+
+On considère les points A et B d’affixes respectives a et b tels que
+
+$a=-(\frac{1+\sqrt{3}}{2})(1-i)$ et $b=-(\frac{1+\sqrt{3}}{2})(1+i)$ 
+
+1) Ecrire a et b sous forme trigonométrique.\textbf{1pt}
+
+2) Quelle est la nature du triangle OAB ?\textbf{1pt}
+
+3) On désigne par C le point d’affixe 1.
+
+a) Ecrire le nombre complexe $\frac{1-a}{b-a}$  sous forme trigonométrique.\textbf{1pt}
+
+b) En déduire la nature du triangle ABC et  utiliser ce résultat pour placer les points A, B, C sur la figure.\textbf{1pt}
+\section*{\textcolor{red}{\underline{Correction de l'exercice 3} (4 points) :}}
+\section*{\textcolor{red}{\underline{Problème} (10,5 points):}}
+\subsection*{Partie A:}
+Soit $f$ la fonction numérique définie par $f(x)=-x+e^{x-1}$  et $C_{f}$ sa courbe dans un repère orthonormé $(O,\vec{i},\vec{j})$ unité 1cm
+
+1) Calculer les limites de $f$ aux bornes de son ensemble de définition puis étudier la nature des branches infinies.\textbf{2pts}
+
+Préciser la position de la courbe par rapport à son asymptote.\textbf{1pt}
+
+2) Dresser le tableau de variation de $f$ puis en déduire le signe de $f(x)$.\textbf{1,5pts}
+
+3) Construire $C_{f}$.\textbf{0,5pts}
+
+4) Soit $g$ la fonction définie sur $\mathbb{R}$ par $g(x)=-x+e^{-x-1}$
+
+  a) Exprimer $g(x)$ en fonction de $f(x)$ \textbf{0,5pt}
+  
+  b) Construire alors $C_{g}$ dans le même repère.  \textbf{0,5pt}
+\section*{Partie B:}
+Soit $h$ la fonction définie par $h(x)=\ln(-x+e^{x-1})$  et $\Gamma$ sa courbe dans autre repère orthonormal
+
+1)
+
+	a)Déterminer l’ensemble de définition de $h$ puis calculer les limites de $h$ aux bornes de son ensemble de définition. \textbf{1pt}
+	
+	b)Montrer que $\forall x>1, h(x)=\ln(-xe^{-x}+e^{-1}) $ puis montrer que la droite $y=x-1$ d’équation est une asymptote à $\Gamma$. \textbf{1pt}
+	
+2) Dresser le tableau de variation de  $h$.   \textbf{1pt}
+    
+3) Soit $\varphi$ la restriction de $h$ à l’intervalle $I=\left] 1, +\infty \right[ $
+    
+    a) Montrer que $\varphi$  réalise une bijection de $I$ vers $J$  à préciser.
+    \textbf{0,5pt}
+        
+    b) Montrer que l’équation $\varphi(x)=0$ admet une solution unique $\alpha$ dont on précisera une valeur approchée à $10^{-1}$ prés   \textbf{1pt}
+    
+    c) Construire $\Gamma$ et la courbe de $\varphi^{-1}$  dans le même repère.  \textbf{1pt}
+\section*{\textcolor{red}{\underline{Correction du Problème} (10,5 points):}}
+\subsection*{Partie A:}
+1)Le domaine de définition de $f$:\\
+$f$ est la somme d'une fonction polynomiale et d'une fonction exponentielle définie sur $\mathbb{R}$ donc $Df=\mathbb{R}$\\
+Les limites aux bornes de $Df$.\\
+Les bornes de $Df$ sont $-\infty$ et $+\infty$\\
+\underline{En $-\infty$}:
+\[\lim_{x \to -\infty}f(x)=\lim_{x \to -\infty}-x+e^{x-1}=+\infty\]
+Donc \textcolor{green}{\[\lim_{x \to -\infty}f(x)=+\infty\]}
+\underline{En $+\infty$}:
+\begin{equation*}
+\lim_{x \to +\infty}f(x)=\lim_{x \to +\infty}-x+e^{x-1}=+\infty
+\begin{cases}
+\lim_{x \to +\infty} -x=-\infty\\
+\lim_{x \to +\infty}e^{x-1}=+\infty
+\end{cases}
+\textbf{Par somme, FI}
+\end{equation*}
+Levons l'indétermination\\
+\begin{equation*}
+\lim_{x \to +\infty}f(x)=\lim_{x \to +\infty}x\left(-\frac{1}{x}+\frac{e^{x-1}}{x}\right)=+\infty
+\end{equation*}
+Donc \textcolor{green}{\[\lim_{x \to -\infty}f(x)=+\infty\]}
+\textbf{Branche parabolique}
+ 
+\underline{En $-\infty$}:
+
+\[\lim_{x \to -\infty}\frac{f(x)}{x}=\lim_{x \to -\infty}\frac{-x+e^{x-1}}{x}=\lim_{x \to -\infty}\frac{-x}{x}+\frac{e^{x-1}}{x}=\lim_{x \to -\infty}-1+e^{-1}\frac{e^{x}}{x}\]
+
+\underline{En $+\infty$}:
+
+\[\lim_{x \to +\infty}\frac{f(x)}{x}=\lim_{x \to +\infty}\frac{-x+e^{x-1}}{x}=\lim_{x \to +\infty}\frac{-x}{x}+\frac{e^{x-1}}{x}=+\infty\]
+Donc \[\lim_{x \to +\infty}\frac{f(x)}{x}=+\infty\] Donc $Cf$ admet une branche parabolique de direction (Oy)
+\end{document}
