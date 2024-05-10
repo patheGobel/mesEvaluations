@@ -413,7 +413,11 @@ Donc le signe de $h(x)$ dépend de celui du numérateur $x-1$
 
 \addplot[green, thick] {-x+ln(-x+exp(x-1))};
 \addplot[blue, thick] {-1};
-\addplot[red, thick] {-x};
+\addplot[yellow, thick] {-x};    
+ % Asymptote verticale x = 1
+    \addplot[red, thick] coordinates {(1,\pgfkeysvalueof{/pgfplots/ymin}) (1,\pgfkeysvalueof{/pgfplots/ymax})};
+    \node[above right] at (axis cs:1,3) {\(x=1\)};  
+ \addplot[blue, thick] {x};
 \end{axis}
 \end{tikzpicture}
 
@@ -421,6 +425,21 @@ Donc le signe de $h(x)$ dépend de celui du numérateur $x-1$
    
     a) Montrons que $\varphi$  réalise une bijection de $I$ vers $J$  à préciser.
     
-$\varphi$ est continue et stricement décroissante sur $I=\left]-\infty; 1 \right[  $ donc c'est une bijection de \[\text{I vers } \varphi(I)=\left] \lim_{x \to 1^{-}}\varphi(x); \lim_{x \to -\infty}\varphi(x) \right[=\left]-\infty; +\infty\right[\]
+$\varphi$ est continue et stricement décroissante sur $I=\left]-\infty; 1 \right[  $ donc c'est une bijection de \[\text{I vers } \varphi(I)\]
+
+\[\varphi(I)=\left] \lim_{x \to 1^{-}}\varphi(x); \lim_{x \to -\infty}\varphi(x) \right[=\left]-\infty; +\infty\right[\]
     Donc $J=\left]-\infty; +\infty\right[$
+    
+b) Montrer que l’équation $\varphi(x)=0$ admet une solution unique $\alpha$ dont on précisera une valeur approchée à $10^{-1}$ prés \textbf{.1pt}
+\subsection*{Existence}
+\[\varphi(x)=0 \text{ admet une solution sur $I$ si } \lim_{x \to -\infty}\varphi(x)\times\lim_{x \to 1^{-}}\varphi(x)<0\]
+Or
+\[\lim_{x \to -\infty}\varphi(x)=+\infty \text{ et} \lim_{x \to 1^{-}}\varphi(x)=-\infty\]
+
+\[\text{Donc } \lim_{x \to -\infty}\varphi(x)\times\lim_{x \to 1^{-}}\varphi(x)<0\]
+Donc l'équation $\varphi(x)=0$ admet une solution sur $I$.
+\subsection*{Unicité}
+Comme $\varphi(x)$ est bijectif et strictement croissant et que $0\in J$ donc la solution est unique. 
+
+Une valeur approchée de $\alpha$:
 \end{document}
