@@ -87,17 +87,18 @@ Préciser la position de la courbe par rapport à son asymptote.\textbf{1pt}
   
   b) Construire alors $C_{g}$ dans le même repère.  \textbf{0,5pt}
 \section*{Partie B:}
-Soit $h$ la fonction définie par $h(x)=x-\ln(-x+e^{x-1})$  et $\Gamma$ sa courbe dans autre repère orthonormal
+Soit $h$ la fonction définie par $h(x)=-x+\ln(-x+e^{x-1})$  et $\Gamma$ sa courbe dans autre repère orthonormal
 
 1)
 
-	a)Déterminer l’ensemble de définition de $h$ puis calculer les limites de $h$ aux bornes de son ensemble de définition. \textbf{1pt}
-	
-	b)Montrer que $\forall x>1, h(x)=\ln(-xe^{-x}+e^{-1}) $ puis montrer que la droite $y=x-1$ d’équation est une asymptote à $\Gamma$ au voisinage de $+\infty$. \textbf{1pt}
+	a)Déterminer l’ensemble de définition de $h$ puis calculer les limites de $h$ aux bornes de son ensemble de définition.Puis déduire les asyptotes enventuelles \textbf{1,5pt}\\
+Etudier $\Gamma$ au voisinage de $-\infty$
+
+	b)Montrer que $\forall x>1, h(x)=\ln(-xe^{-x}+e^{-1}) $ . \textbf{.0,5pt}
 	
 2) Dresser le tableau de variation de  $h$.   \textbf{1pt}
     
-3) Soit $\varphi$ la restriction de $h$ à l’intervalle $I=\left] 1, +\infty \right[ $
+3) Soit $\varphi$ la restriction de $h$ à l’intervalle $I=\left]-\infty, 1\right[ $
     
     a) Montrer que $\varphi$  réalise une bijection de $I$ vers $J$  à préciser.
     \textbf{0,5pt}
@@ -252,7 +253,7 @@ donc $g(-x)=f(x)$
 
 	a)Ensemble de définition de $h$
 
-Nous remarquons que 	$h(x)=x-\ln(f(x))$
+Nous remarquons que 	$h(x)=-x+\ln(f(x))$
 
 Or $\forall x\in \mathbb{R}\setminus\left\lbrace 1\right\rbrace $, $f(x)>0$ et $x$ existe
 
@@ -264,66 +265,66 @@ les bornes de $Dh$ sont $-\infty$, 1 et $+\infty$
 
 \underline{En $-\infty$}:
 \begin{equation*}
-\lim_{x \to -\infty}h(x)=\lim_{x \to -\infty}\left[ x-\ln(-x+e^{x-1})\right] 
+\lim_{x \to -\infty}h(x)=\lim_{x \to -\infty}\left[ -x+\ln(-x+e^{x-1})\right] 
 \begin{cases}
 \lim_{x \to -\infty} -x+e^{x-1}=+\infty\\
-\lim_{y \to +\infty}-\ln(y)=-\infty\\
-\lim_{x \to -\infty}x=-\infty
+\lim_{y \to +\infty}\ln(y)=+\infty\\
+\lim_{x \to -\infty}-x=+\infty
 \end{cases}
 \end{equation*}
-\textcolor{red}{\[\text{Par composition,}\lim_{x \to -\infty}-\ln(-x+e^{x-1})=-\infty\quad\text{et par somme,}\lim_{x \to -\infty}h(x)=-\infty\]} 
-\textcolor{red}{\[\text{donc,}\quad h(x)=-\infty\]}
+\textcolor{red}{\[\text{Par composition,}\lim_{x \to -\infty}\ln(-x+e^{x-1})=+\infty\quad\text{et par somme,}\lim_{x \to -\infty}h(x)=+\infty\]} 
+\textcolor{red}{\[\text{donc,}\quad h(x)=+\infty\]}
 
 \underline{En $+\infty$}:
 \begin{equation*}
-\lim_{x \to +\infty}h(x)=\lim_{x \to +\infty}\left[x-\ln(-x+e^{x-1})\right] 
+\lim_{x \to +\infty}h(x)=\lim_{x \to +\infty}\left[-x+\ln(-x+e^{x-1})\right] 
 \begin{cases}
 \lim_{x \to +\infty} -x+e^{x-1}=+\infty\\
-\lim_{y \to +\infty}-\ln(y)=-\infty\\
-\lim_{x \to +\infty}x=+\infty
+\lim_{y \to +\infty}\ln(y)=+\infty\\
+\lim_{x \to +\infty}-x=-\infty
 \end{cases}
 \end{equation*}
-\textcolor{red}{\[\text{Par composition,}\lim_{x \to +\infty}-\ln(-x+e^{x-1})=+\infty\quad\text{et par somme, forme indéterminée.}\]} 
+\textcolor{red}{\[\text{Par composition,}\lim_{x \to +\infty}\ln(-x+e^{x-1})=+\infty\quad\text{et par somme, forme indéterminée.}\]} 
 %\textcolor{red}{\[\text{donc,}\quad h(x)=+\infty\]}
 Levons l'indétermination
 \begin{equation*}
-\lim_{x \to +\infty}h(x)=\lim_{x \to +\infty}\left[x-\ln(-x+e^{x-1})\right]=\lim_{x \to +\infty}\left[x-\ln\left[e^{x}(-xe^{-x}+e^{-1})\right] \right]=\lim_{x \to +\infty}-\ln\left[(-xe^{-x}+e^{-1})\right]
+\lim_{x \to +\infty}h(x)=\lim_{x \to +\infty}\left[-x+\ln(-x+e^{x-1})\right]=\lim_{x \to +\infty}\left[-x+\ln\left[e^{x}(-xe^{-x}+e^{-1})\right] \right]=\lim_{x \to +\infty}\ln\left[(-xe^{-x}+e^{-1})\right]
 \end{equation*}
 \begin{equation*}
-\lim_{x \to +\infty}h(x)=\lim_{x \to +\infty}-\ln\left[(-xe^{-x}+e^{-1})\right]
+\lim_{x \to +\infty}h(x)=\lim_{x \to +\infty}\ln\left[(-xe^{-x}+e^{-1})\right]
 \begin{cases}
 \lim_{x \to +\infty} -xe^{-x}+e^{-1}=\lim_{x \to +\infty} -\frac{x}{e^{x}}+e^{-1}=e^{-1}\\
-\lim_{y \to e^{-1}}\ln(y)=1
+\lim_{y \to e^{-1}}\ln(y)=-1
 \end{cases}
 \end{equation*}
-\textcolor{red}{\[\text{Par composition,}\lim_{x \to +\infty}\ln(-x+e^{x-1})=1\]} 
-\textcolor{red}{\[\text{donc,}\lim_{x \to +\infty}h(x)=1\]} 
+\textcolor{red}{\[\text{Par composition,}\lim_{x \to +\infty}\ln(-x+e^{x-1})=-1\]} 
+\textcolor{red}{\[\text{donc,}\lim_{x \to +\infty}h(x)=-1\]} 
 \underline{En $1^{-}$}:
 \begin{equation*}
-\lim_{x \to 1^{-}}h(x)=\lim_{x \to 1^{-}}x-\ln(-x+e^{x-1})
+\lim_{x \to 1^{-}}h(x)=\lim_{x \to 1^{-}}-x+\ln(-x+e^{x-1})
 \begin{cases}
 \lim_{x \to 1^{-}} -x+e^{x-1}=\lim_{x \to 1^{-}}f(x)=0^{+}\\
-\lim_{y \to 0^{+}}-\ln(y)=+\infty\\
-\lim_{x \to 1^{-}} x=1
+\lim_{y \to 0^{+}}\ln(y)=-\infty\\
+\lim_{x \to 1^{-}} -x=-1
 \end{cases}
 \end{equation*}
 %\textcolor{red}{\[\lim_{x \to 1^{-}}h(x)=-\infty\]}
-\textcolor{red}{\[\text{Par composition,}\lim_{x \to 1^{-}}-\ln(-x+e^{x-1})=+\infty\quad\text{et par somme,}\lim_{x \to 1^{-}}x-\ln(-x+e^{x-1})=+\infty\]} 
+\textcolor{red}{\[\text{Par composition,}\lim_{x \to 1^{-}}\ln(-x+e^{x-1})=-\infty\quad\text{et par somme,}\lim_{x \to 1^{-}}-x+\ln(-x+e^{x-1})=-\infty\]} 
 
-\textcolor{red}{\[\text{Donc}\lim_{x \to 1^{-}}h(x)=+\infty\]}
+\textcolor{red}{\[\text{Donc}\lim_{x \to 1^{-}}h(x)=-\infty\]}
 
 \underline{En $1^{+}$}:
 \begin{equation*}
-\lim_{x \to 1^{+}}h(x)=\lim_{x \to 1^{+}}x-\ln(-x+e^{x-1})
+\lim_{x \to 1^{+}}h(x)=\lim_{x \to 1^{+}}-x+\ln(-x+e^{x-1})
 \begin{cases}
 \lim_{x \to 1^{+}} -x+e^{x-1}=\lim_{x \to 1^{+}}f(x)=0^{+}\\
-\lim_{y \to 0^{+}}-\ln(y)=+\infty\\
-\lim_{x \to 1^{-}}x=1
+\lim_{y \to 0^{+}}\ln(y)=-\infty\\
+\lim_{x \to 1^{-}}-x=-1
 \end{cases}
 \end{equation*}
-\textcolor{red}{\[\text{Par composition,}\lim_{x \to +\infty}-\ln(-x+e^{x-1})=+\infty\quad\text{et par somme,}\lim_{x \to 1^{-}}x-\ln(-x+e^{x-1})=+\infty\]} 
+\textcolor{red}{\[\text{Par composition,}\lim_{x \to +\infty}\ln(-x+e^{x-1})=-\infty\quad\text{et par somme,}\lim_{x \to 1^{-}}-x+\ln(-x+e^{x-1})=-\infty\]} 
 
-\textcolor{red}{\[\text{Donc}\lim_{x \to 1^{+}}h(x)=+\infty\]}
+\textcolor{red}{\[\text{Donc}\lim_{x \to 1^{+}}h(x)=-\infty\]}
 
 b)Montrons que $\forall x>1, h(x)=\ln(-xe^{-x}+e^{-1}) $ 
 
@@ -331,30 +332,30 @@ On a: $h(x)=-x+\ln(-x+e^{x-1})=-x+\ln\left[e^{x}(-xe^{-x}+e^{-1})\right]=-x+x+\l
 
 Donc $h(x)=\ln\left[(-xe^{-x}+e^{-1})\right]$
 
-\subsection*{Montrons que la droite $y=x-1$ d’équation est une asymptote à $\Gamma$.}
+%\subsection*{Montrons que la droite $y=x-1$ d’équation est une asymptote à $\Gamma$.}
 
-\[h\quad \text{est asymptote à\quad} \Gamma\quad \text{si} \lim_{x \to +\infty}\left[ h(x)-y\right] =0\]
+%\[h\quad \text{est asymptote à\quad} \Gamma\quad \text{si} \lim_{x \to +\infty}\left[ h(x)-y\right] =0\]
 
-$h(x)=\ln\left[(-xe^{-x}+e^{-1})\right]=\left[ x-\ln(-x+e^{x-1})\right]$
-\[\lim_{x \to +\infty}\left[ h(x)-y\right]=\lim_{x \to +\infty}\left[ x-\ln(-x+e^{x-1})-(x-1)\right]=\lim_{x \to +\infty}\left[ -\ln(-x+e^{x-1})+1\right]\]
-\[\text{Or}\quad\lim_{x \to +\infty}\left[ -\ln(-x+e^{x-1})\right]=-1\]
-\[\text{donc}\quad\lim_{x \to +\infty}\left[ h(x)-y\right] =0\]
-Donc $y=x-1$ d’équation est une asymptote à $\Gamma$ au voisinage de $+\infty$.
+%$h(x)=\ln\left[(-xe^{-x}+e^{-1})\right]=\left[ -x+\ln(-x+e^{x-1})\right]$
+%\[\lim_{x \to +\infty}\left[ h(x)-y\right]=\lim_{x \to +\infty}\left[ -x+\ln(-x+e^{x-1})-(-x-1)\right]=\lim_{x %%\to +\infty}\left[ \ln(-x+e^{x-1})+1\right]\]
+%\[\text{Or}\quad\lim_{x \to +\infty}\left[ \ln(-x+e^{x-1})\right]=-1\]
+%\[\text{donc}\quad\lim_{x \to +\infty}\left[ h(x)-y\right] =0\]
+%Donc $y=x-1$ d’équation est une asymptote à $\Gamma$ au voisinage de $+\infty$.
 
 2) Dressons le tableau de variation de  $h$. 
 
 Dérivons $h$:
 
-$h'(x)=1-\left[\frac{f'(x)}{f(x)}\right]=1-\left[\frac{-1+e^{x-1}}{-x+e^{x-1}}\right]=\frac{-x+e^{x-1}+1-e^{x-1}}{-x+e^{x-1}}=\frac{-x+1}{-x+e^{x-1}}$
+$h'(x)=-1+\left[\frac{f'(x)}{f(x)}\right]=-1+\left[\frac{-1+e^{x-1}}{-x+e^{x-1}}\right]=\frac{x-e^{x-1}-1+e^{x-1}}{-x+e^{x-1}}=\frac{x-1}{-x+e^{x-1}}$
 
-Donc $h'(x)=\frac{1-x}{f(x)}$
+Donc $h'(x)=\frac{x-1}{f(x)}$
 
 D'après la réponse à la question 2), $\forall x\in \mathbb{R}\setminus\left\lbrace 1\right\rbrace $, $f(x)>0$
 
-Donc le signe de $h(x)$ dépend de celui du numérateur $1-x$
+Donc le signe de $h(x)$ dépend de celui du numérateur $x-1$
 \begin{itemize}
-\item[•] Si $x\in \left]-\infty; 1\right[$, f'(x)>0 donc f est croissante
-\item[•] Si $x\in \left]1; +\infty\right[$, f'(x)<0 donc f est décroissante
+\item[•] Si $x\in \left]-\infty; 1\right[$, f'(x)<0 donc f est décroissante
+\item[•] Si $x\in \left]1; +\infty\right[$, f'(x)>0 donc f est croissante
 \end{itemize}
 
 \textcolor{red}{Tableau de variation}\\
@@ -376,18 +377,50 @@ Donc le signe de $h(x)$ dépend de celui du numérateur $1-x$
 \draw (-21,7) node[anchor=north west] {$x$};
 \draw (-19,7) node[anchor=north west] {$-\infty$};
 \draw (-13.3,6.5) node[anchor=north west] {$1$};
-\draw (-13.1,3.5) node[anchor=north west] {$+\infty$};
-\draw (-14.3,3.5) node[anchor=north west] {$+\infty$};
+\draw (-13.1,-1) node[anchor=north west] {$-\infty$};
+\draw (-14.3,-1) node[anchor=north west] {$-\infty$};
 \draw (-8,7) node[anchor=north west] {$+\infty$};
 %signe de la dérivé
-\draw (-17,5.3) node[anchor=north west] {$+$};
+\draw (-17,5.3) node[anchor=north west] {$-$};
 \draw (-13.39,5.3) node[anchor=north west] {\textbf{\textcolor{blue}{O}}};
-\draw (-10,5.3) node[anchor=north west] {$-$};
+\draw (-10,5.3) node[anchor=north west] {$+$};
 
-\draw [->,line width=2pt] (-18,-1) -- (-13.5,3);
-\draw (-18.8,-1) node[anchor=north west] {$-\infty$};
+\draw [->,line width=2pt] (-18,3) -- (-13.5,-1);
+\draw (-18.8,4) node[anchor=north west] {$+\infty$};
 
-\draw [->,line width=2pt] (-12.5,3) -- (-8,-1);
-\draw (-8,-1) node[anchor=north west] {$1$};
+\draw [->,line width=2pt] (-12.5,-1) -- (-8,3);
+\draw (-8,4) node[anchor=north west] {$-1$};
 \end{tikzpicture}
+
+%Cherchons le point où la courbe $\Gamma$ coupent l'axe des abscisses .\\
+%Pour ce faire résolvons l'équation $h(x)=0 \Rightarrow \ln(-xe^{-x}+e^{-1})=\ln(1)$\\
+%$\ln(-xe^{-x}+e^{-1})=\ln(1) \Rightarrow -xe^{-x}+e^{-1}=1 \Rightarrow -xe^{-x}=1-e^{-1}$
+
+\begin{tikzpicture}
+\begin{axis}[
+    axis lines = middle,
+    xlabel = \(x\),
+    ylabel = \(f(x)\),
+    xmin = -4,
+    xmax = 4,
+    ymin = -4,
+    ymax = 4,
+    domain = -4:4,
+    samples = 100,
+    grid = both,
+    legend pos = north west,
+]
+
+\addplot[green, thick] {-x+ln(-x+exp(x-1))};
+\addplot[blue, thick] {-1};
+\addplot[red, thick] {-x};
+\end{axis}
+\end{tikzpicture}
+
+3)$\varphi$ la restriction de $h$ à l’intervalle $I=\left]-\infty; 1 \right[ $
+   
+    a) Montrons que $\varphi$  réalise une bijection de $I$ vers $J$  à préciser.
+    
+$\varphi$ est continue et stricement décroissante sur $I=\left]-\infty; 1 \right[  $ donc c'est une bijection de \[\text{I vers } \varphi(I)=\left] \lim_{x \to 1^{-}}\varphi(x); \lim_{x \to -\infty}\varphi(x) \right[=\left]-\infty; +\infty\right[\]
+    Donc $J=\left]-\infty; +\infty\right[$
 \end{document}
