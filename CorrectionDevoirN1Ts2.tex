@@ -47,6 +47,14 @@
 Calcucler les limtes suivantes
 \[\lim_{x \to +\infty}\frac{\ln(x-1)}{2x-3}\quad\quad\lim_{x \to +\infty}\frac{\ln(x)}{\sqrt{x}}\]
 \section*{\textcolor{red}{\underline{Correction de l'exercice 1} (4 points) :}}
+\[\lim_{x \to +\infty}\frac{\ln(x-1)}{2x-3}=\lim_{x \to +\infty}\frac{\ln(x(1-\frac{1}{x}))}{x(2-\frac{3}{x})}=\lim_{x \to +\infty}\frac{\ln(x)+\ln(1-\frac{1}{x})}{x(2-\frac{3}{x})}=\lim_{x \to +\infty}\frac{\ln(x)}{x}\frac{1}{(2-\frac{3}{x})}+\frac{\ln(1-\frac{1}{x})}{x(2-\frac{3}{x})}=0\]
+
+\[\color{red}{\boxed{\text{Donc, }\lim_{x \to +\infty}\frac{\ln(x-1)}{2x-3}=0} }\]
+
+\[\lim_{x \to +\infty}\frac{\ln(x)}{\sqrt{x}}=\lim_{x \to +\infty}\frac{\ln((\sqrt{x})^{2})}{\sqrt{x}}=\lim_{x \to +\infty}2\frac{\ln(\sqrt{x})}{\sqrt{x}}=\lim_{X \to +\infty}2\frac{\ln(X)}{X}=0\]
+
+\[\color{red}{ \boxed{\text{Donc, }\lim_{x \to +\infty}\frac{\ln(x)}{\sqrt{x}}=0} }\]
+
 \section*{\textcolor{red}{\underline{Exercice 2} (4 points) :}}
 1)Resoudre dans $\mathbb{C}$ l'équation $z^{4}=1$. \textbf{2pt}
 
@@ -69,44 +77,46 @@ a) Ecrire le nombre complexe $\frac{1-a}{b-a}$  sous forme trigonométrique.\tex
 
 b) En déduire la nature du triangle ABC et  utiliser ce résultat pour placer les points A, B, C sur la figure.\textbf{1pt}
 \section*{\textcolor{red}{\underline{Correction de l'exercice 3} (4 points) :}}
-\section*{\textcolor{red}{\underline{Problème} (10,5 points):}}
-\subsection*{Partie A:}
+\section*{\textcolor{red}{\underline{Problème} (12,25 points) :}}
+\subsection*{Partie A:(5,5 pts)}
 Soit $f$ la fonction numérique définie par $f(x)=-x+e^{x-1}$  et $C_{f}$ sa courbe dans un repère orthonormé $(O,\vec{i},\vec{j})$ unité 1cm
 
-1) Calculer les limites de $f$ aux bornes de son ensemble de définition puis étudier la nature des branches infinies.\textbf{2pts}
+1) Calculer les limites de $f$ aux bornes de son ensemble de définition puis étudier la nature des branches infinies.\textbf{(2,25pts=0.25+0,5pt$\times$ 4)}
 
-Préciser la position de la courbe par rapport à son asymptote.\textbf{1pt}
+2) Préciser la position de la courbe par rapport à son asymptote.\textbf{(0,5pt)}
 
-2) Dresser le tableau de variation de $f$ puis en déduire le signe de $f(x)$.\textbf{1,5pts}
+3) Dresser le tableau de variation de $f$ puis en déduire le signe de $f(x)$.\textbf{(1pt=1pt$\times$ 2)}
 
-3) Construire $C_{f}$.\textbf{0,5pts}
+4) Construire $C_{f}$.\textbf{(0,75pts)}
 
-4) Soit $g$ la fonction définie sur $\mathbb{R}$ par $g(x)=x+e^{-x-1}$
+5) Soit $g$ la fonction définie sur $\mathbb{R}$ par $g(x)=x+e^{-x-1}$
 
-  a) Exprimer $g(x)$ en fonction de $f(x)$ \textbf{0,5pt}
+  a) Exprimer $g(x)$ en fonction de $f(x)$ \textbf{(0,5pt)}
   
-  b) Construire alors $C_{g}$ dans le même repère.  \textbf{0,5pt}
-\section*{Partie B:}
+  b) Construire alors $C_{g}$ dans le même repère.  \textbf{(0,5pt)}
+\section*{Partie B:(6,75pts)}
 Soit $h$ la fonction définie par $h(x)=-x+\ln(-x+e^{x-1})$  et $\Gamma$ sa courbe dans autre repère orthonormal
 
 1)
+\begin{itemize}
+	\item[a)] Déterminer l’ensemble de définition de $h$ puis calculer les limites de $h$ aux bornes de son ensemble de définition. \textbf{(2,25pts=0,25pt+0,5pt$\times$ 4)}
+	\item[] En déduire les asyptotes enventuelles.\textbf{(1pt=0,5pt$\times$ 2)}
+	\item[]Etudier le comportement de  $\Gamma$ au voisinage de $-\infty$\textbf{.(0,75pt)}
 
-	a)Déterminer l’ensemble de définition de $h$ puis calculer les limites de $h$ aux bornes de son ensemble de définition.Puis déduire les asyptotes enventuelles \textbf{1,5pt}\\
-Etudier le comportement de  $\Gamma$ au voisinage de $-\infty$
-
-	b)Montrer que $\forall x>1, h(x)=\ln(-xe^{-x}+e^{-1}) $ . \textbf{.0,5pt}
-	
-2) Dresser le tableau de variation de  $h$.   \textbf{1pt}
+	\item[b)]Montrer que $\forall x>1, h(x)=\ln(-xe^{-x}+e^{-1}) $ \textbf{.(0,25pt)}
+\end{itemize}
+2) Dresser le tableau de variation de  $h$.   \textbf{0,75pt}
     
 3) Soit $\varphi$ la restriction de $h$ à l’intervalle $I=\left]-\infty, 1\right[ $
     
     a) Montrer que $\varphi$  réalise une bijection de $I$ vers $J$  à préciser.
-    \textbf{0,5pt}
+    \textbf{.0,25pt}
         
-    b) Montrer que l’équation $\varphi(x)=0$ admet une solution unique $\alpha$ dont on précisera une valeur approchée à $10^{-1}$ prés   \textbf{1pt}
+    b) Montrer que l’équation $\varphi(x)=0$ admet une solution unique $\alpha$.\\
+    En déduire que $\alpha \in \left]-0,5 ; -0,4 \right[ $ puis donne un encadrement à $10^{-2}$ prés de $\alpha$ \textbf{.(0,25pt$\times$2)}
     
-    c) Construire $\Gamma$ et la courbe de $\varphi^{-1}$  dans le même repère.  \textbf{1pt}
-\section*{\textcolor{red}{\underline{Correction du Problème} (10,5 points):}}
+    c) Construire $\Gamma$ et la courbe de $\varphi^{-1}$  dans le même repère\textbf{.(1pt=0,5pt$\times$2)}
+\section*{\textcolor{red}{\underline{Correction du Problème} (12,25 points):}}
 \subsection*{Partie A:}
 1)Le domaine de définition de $f$:\\
 $f$ est la somme d'une fonction polynomiale et d'une fonction exponentielle définie sur $\mathbb{R}$ donc $Df=\mathbb{R}$\\
@@ -326,6 +336,12 @@ Levons l'indétermination
 
 \textcolor{red}{\[\text{Donc}\lim_{x \to 1^{+}}h(x)=-\infty\]}
 
+\textbf{Les  asymptotes eventuelles:}
+
+\textcolor{red}{\[\text{Donc}\lim_{x \to 1 }h(x)=\infty\text{\quad donc x=1 est une AV}\]}
+
+\textcolor{red}{\[\text{donc,}\lim_{x \to +\infty}h(x)=-1\text{\quad donc y=-1 est une AH}\]}
+
 b)Montrons que $\forall x>1, h(x)=\ln(-xe^{-x}+e^{-1}) $ 
 
 On a: $h(x)=-x+\ln(-x+e^{x-1})=-x+\ln\left[e^{x}(-xe^{-x}+e^{-1})\right]=-x+x+\ln\left[(-xe^{-x}+e^{-1})\right]$
@@ -392,15 +408,11 @@ Donc le signe de $h(x)$ dépend de celui du numérateur $x-1$
 \draw (-8,4) node[anchor=north west] {$-1$};
 \end{tikzpicture}
 
-%Cherchons le point où la courbe $\Gamma$ coupent l'axe des abscisses .\\
-%Pour ce faire résolvons l'équation $h(x)=0 \Rightarrow \ln(-xe^{-x}+e^{-1})=\ln(1)$\\
-%$\ln(-xe^{-x}+e^{-1})=\ln(1) \Rightarrow -xe^{-x}+e^{-1}=1 \Rightarrow -xe^{-x}=1-e^{-1}$
-
 \begin{tikzpicture}
 \begin{axis}[
     axis lines = middle,
     xlabel = \(x\),
-    ylabel = \(f(x)\),
+    ylabel = \(y\),
     xmin = -4,
     xmax = 4,
     ymin = -4,
@@ -417,7 +429,6 @@ Donc le signe de $h(x)$ dépend de celui du numérateur $x-1$
  % Asymptote verticale x = 1
     \addplot[red, thick] coordinates {(1,\pgfkeysvalueof{/pgfplots/ymin}) (1,\pgfkeysvalueof{/pgfplots/ymax})};
     \node[above right] at (axis cs:1,3) {\(x=1\)};  
- \addplot[blue, thick] {x};
 \end{axis}
 \end{tikzpicture}
 
@@ -430,7 +441,8 @@ $\varphi$ est continue et stricement décroissante sur $I=\left]-\infty; 1 \righ
 \[\varphi(I)=\left] \lim_{x \to 1^{-}}\varphi(x); \lim_{x \to -\infty}\varphi(x) \right[=\left]-\infty; +\infty\right[\]
     Donc $J=\left]-\infty; +\infty\right[$
     
-b) Montrons que l’équation $\varphi(x)=0$ admet une solution unique $\alpha$ dont on précisera une valeur approchée à $10^{-1}$ prés \textbf{.1pt}
+b) Montrons que l’équation $\varphi(x)=0$ admet une solution unique $\alpha$. 
+
 \subsection*{Existence}
 \[\varphi(x)=0 \text{ admet une solution sur $I$ si } \lim_{x \to -\infty}\varphi(x)\times\lim_{x \to 1^{-}}\varphi(x)<0\]
 Or
@@ -441,5 +453,9 @@ Donc l'équation $\varphi(x)=0$ admet une solution sur $I$.
 \subsection*{Unicité}
 Comme $\varphi(x)$ est bijectif et strictement croissant et que $0\in J$ donc la solution est unique. 
 
-Une valeur approchée de $\alpha$:
+Montrons que $\alpha \in \left]-0,5 ; -0,4 \right[ $
+
+Puisque $\varphi(-0,5)\times \varphi(-0,4)<0$ donc $\alpha \in \left]-0,5 ; -0,4 \right[ $
+
+Donnons une valeur approchée à $10^{-2}$ prés de $\alpha$
 \end{document}
