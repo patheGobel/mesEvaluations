@@ -90,8 +90,42 @@ Par quotient, forme infinie\\
 \[\lim_{x \to \frac{1}{5}}\frac{x-2\sqrt{x}}{1-5x}=\frac{\frac{1-2\sqrt{5}}{5}}{0^{+}}=-\infty\]
 \[\text{donc, }\textcolor{red}{\boxed{\lim_{x \to \frac{1}{5}^{-}}\frac{x-2\sqrt{x}}{1-5x}=-\infty}}\]
 \textcolor{red}{En $\frac{1}{5}^{+}$}
-\[\lim_{x \to \frac{1}{5}}\frac{x-2\sqrt{x}}{1-5x}=\frac{\frac{1-2\sqrt{5}}{5}}{0^{-}}=+\infty\]
-\[\text{donc, }\textcolor{red}{\boxed{\lim_{x \to \frac{1}{5}^{-}}\frac{x-2\sqrt{x}}{1-5x}=+\infty}}\]
+\[\lim_{x \to \frac{1}{5}^{+}}\frac{x-2\sqrt{x}}{1-5x}=\frac{\frac{1-2\sqrt{5}}{5}}{0^{-}}=+\infty\]
+\[\text{donc, }\textcolor{red}{\boxed{\lim_{x \to \frac{1}{5}^{+}}\frac{x-2\sqrt{x}}{1-5x}=+\infty}}\]
+\subsection*{b) Etudions la continuité de f sur son $D_{f}$: (1 pt $\times$ 2)}
+\[ f(x) = \begin{cases} 
+  \frac{x^2-1}{x-1}, & \text{si } x < 1 \\
+   2x,\quad\quad\quad\quad\quad \text{si } 1 \leq x \leq 2\\
+  \sqrt{x+2}, & \text{si } x > 2
+\end{cases} \]
+
+\[\text{Posons} f(x) = \begin{cases} 
+  f_{1}(x)=\frac{x^2-1}{x-1}, & \text{si } x < 1 \\
+   f_{2}(x)=2x,\quad\quad\quad\quad\quad \text{si } 1 \leq x \leq 2\\
+  f_{3}(x)=\sqrt{x+2}, & \text{si } x > 2
+\end{cases} \]
+Le domaine de définition de f
+\begin{itemize}
+\item[•] $f_{1}$ existe ssi  $x-1\neq0$ et $x < 1$
+
+donc $x\neq 1$ et $x \in \left] -\infty, 1\right[$
+
+Comme  $1 \notin \left] -\infty, 1\right[$
+
+Donc $Df_{1}=\left] -\infty, 1\right[$
+\item[•] $f_{2}$ est polynôme définie si $1 \leq x \leq 2$
+
+Donc $Df_{2}=\left[  1, 2\right] $
+\item[•] $f_{3}$ existe ssi $x+2\geq 0$ et $x > 2$
+
+donc $x\geq -2$ et $x \in \left]2, +\infty\right[  \Rightarrow x \in\left]-2, +\infty\right[$ et $x \in \left]2, +\infty\right[ \Rightarrow x\in (\left]-2, +\infty\right[\cap\left]2, +\infty\right[)$
+
+Donc $Df_{3}=\left]2, +\infty\right[ $
+
+$Df=Df_{1} \cap Df_{2} \cap Df_{3}=\left]-\infty, 1\right[\cap\left[  1, 2\right] \cap\left]2, +\infty\right[=\mathbb{R}$
+
+Finalement $Df=\mathbb{R}$
+\end{itemize}
 \section*{Exercice 2 (4 points) :}
 \subsection*{a) Etudier la dérivabilté de $f$ sur domaine de définition $D_{f}$}
 \[ f(x) = \begin{cases} 
