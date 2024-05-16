@@ -132,7 +132,7 @@ Etudions la continuité de f en $1$ et en $2$
 \textcolor{red}{\[\text{A-t-on, } \lim_{x \to 1^{-}}f(x)=\lim_{x \to 1^{+}}f(x) ?\]}
 
 \[\lim_{x \to 1^{-}}f(x)=\lim_{x \to 1^{-}}\frac{x^2-1}{x-1}=\lim_{x \to 1^{-}}(x+1)=2\]
-\[\lim_{x \to 1^{+}}f(x)=\lim_{x \to 1^{-}}2x=2\]
+\[\lim_{x \to 1^{+}}f(x)=\lim_{x \to 1^{+}}2x=2\]
 
 \textcolor{red}{\[\text{Oui, } \lim_{x \to 1^{-}}f(x)=\lim_{x \to 1^{+}}f(x)\text{ Donc f est continue en 1.}\]}
 
@@ -140,7 +140,7 @@ Etudions la continuité de f en $1$ et en $2$
 \textcolor{red}{\[\text{A-t-on, } \lim_{x \to 2^{-}}f(x)=\lim_{x \to 2^{+}}f(x) ?\]}
 
 \[\lim_{x \to 2^{-}}f(x)=\lim_{x \to 2^{-}}2x=4\]
-\[\lim_{x \to 2^{+}}f(x)=\lim_{x \to 2^{-}}\sqrt{x+2}=2\]
+\[\lim_{x \to 2^{+}}f(x)=\lim_{x \to 2^{+}}\sqrt{x+2}=2\]
 
 \textcolor{red}{\[\text{Non, } \lim_{x \to 2^{-}}f(x)\neq\lim_{x \to 2^{+}}f(x)\text{ Donc f n'est pas continue en 2. }\]}
 
@@ -152,8 +152,39 @@ Etudions la continuité de f en $1$ et en $2$
   -2x^{2}, & \text{si } x > 0 
 \end{cases} \]
 \subsection*{b) Soit $f(x)=|x|$ }
-Montrer que $f$ est continue en 0 mais n'est pas dérivable en 0
+Montrer que $f$ est continue en 0 mais n'est pas dérivable en 0.
 \section*{\textcolor{red}{\underline{Correction Exercice 2} (4 points) :}}
+\subsection*{a) Etudions la dérivabilté de $f$ sur domaine de définition $Df$}
+$Df=\mathbb{R}$
+\textcolor{red}{\[\text{A-t-on, } \lim_{x \to 0^{-}}\frac{f(x)-f(0)}{x-0}=\lim_{x \to 0^{+}}\frac{f(x)-f(0)}{x-0}?\]}
+\[\lim_{x \to 0^{-}}\frac{f(x)-f(0)}{x-0}=\lim_{x \to 0^{-}}\frac{3x^{2}}{x}=\lim_{x \to 0^{-}}3x=0\]
+\[\lim_{x \to 0^{+}}\frac{f(x)-f(0)}{x-0}=\lim_{x \to 0^{+}}\frac{-2x^{2}}{x}=\lim_{x \to 0^{+}}-2x=0\]
+
+\textcolor{red}{\[\text{Oui, } \lim_{x \to 0^{-}}\frac{f(x)-f(0)}{x-0}=\lim_{x \to 0^{+}}\frac{f(x)-f(0)}{x-0}\text{ Donc f est dérivable en 0. }\]}
+\subsection*{b) Soit $f(x)=|x|$ }
+Montrons que $f$ est continue en 0 mais n'est pas dérivable en 0
+
+Ecrivons $f$ sans valeur absolue d'abord.
+\[ |x| = \begin{cases} 
+  -x, & \text{si } x \leq 0 \\
+  x, & \text{si } x > 0 
+\end{cases} \]
+
+\textcolor{red}{\underline{Continuité de f en 0:}}
+\textcolor{red}{\[\text{A-t-on, } \lim_{x \to 0^{-}}f(x)=\lim_{x \to 0^{+}}f(x) ?\]}
+\[\lim_{x \to 0^{-}}f(x)=\lim_{x \to 0^{-}}-x=0\]
+\[\lim_{x \to 0^{+}}f(x)=\lim_{x \to 0^{+}}x=0\]
+\textcolor{red}{\[\text{Oui, } \lim_{x \to 0^{-}}f(x)=\lim_{x \to 0^{+}}f(x)\text{ Donc f est continue en 0.}\]}
+
+\textcolor{red}{\underline{Dérivabilité de f en 0:}}
+\textcolor{red}{\[\text{A-t-on, } \lim_{x \to 0^{-}}\frac{f(x)-f(0)}{x-0}=\lim_{x \to 0^{+}}\frac{f(x)-f(0)}{x-0}?\]}
+
+\[\lim_{x \to 0^{-}}\frac{f(x)-f(0)}{x-0}=\lim_{x \to 0^{-}}\frac{-x}{x}=-1\]
+\[\lim_{x \to 0^{+}}\frac{f(x)-f(0)}{x-0}=\lim_{x \to 0^{+}}\frac{x}{x}=1\]
+
+\textcolor{red}{\[\text{Non, } \lim_{x \to 0^{-}}\frac{f(x)-f(0)}{x-0}=\lim_{x \to 0^{+}}\frac{f(x)-f(0)}{x-0}\text{ Donc f n'est  pas dérivable en 0. }\]}
+
+Conclusion, $f$ est continue sur $\mathbb{R}$ mais n'y est pas dérivable.
 \section*{Exercice 3 (6 points) :}
 \subsection*{ Dans chacun des cas suivants, calculer la dérivé de $f$}
 \begin{itemize}
