@@ -118,6 +118,67 @@ Par quotient, forme infinie\\
 \subsection*{b) Soit $f(x)=|x+1|$ }
 Montrer que $f$ est continue en -1. Qu'en est-il de sa dérivable en -1 ? \textbf{(1,5 pts)}
 \section*{\textcolor{red}{\underline{Correction Exercice 2} (3 points) :}}
+\subsection*{a) Dans chaque cas, justifions que f est dérivable sur I. (1,5 pts)}
+$f(x)=(2x^{2}-1)(x-3)^{4}$ est le produit deux fonctions polynomes donc dérivable sur $I=\mathbb{R}$
+
+$g(x)=\frac{-3}{x^{3}-1}$ est une fonction rationnel donc dérivable sur $I=\mathbb{R}\setminus\left\lbrace 1 \right\rbrace$
+
+$I(x)=\sqrt{3x^{2}+x+7}$ est une fonction irrationnel donc dérivable sur $I=\mathbb{R}$ car\\ $\forall x\in \mathbb{R}, 3x^{2}+x+7\neq 0$
+\subsection*{b) Soit $f(x)=|x+1|$ }
+Montrons que $f$ est continue en -1.
+
+\[\text{A-t-on }\lim_{x \to 0^{-}}f(x)=\lim_{x \to 0^{+}}f(x)=f(0)?\]
+\[\textcolor{red}{\text{ Ecrivons sans valeur absolue.}}\]
+Posons $x+1=0\Rightarrow x=-1$
+
+\definecolor{cqcqcq}{rgb}{0.7529411764705882,0.7529411764705882,0.7529411764705882}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+%\draw [color=cqcqcq,, xstep=1cm,ystep=1cm] (-7,-10) grid (-22,17);
+\clip(-22,3) rectangle (12,10);
+\draw [line width=2pt] (-23,8)-- (-7,8); %première ligne A(-22,8)---B(-7,8)
+\draw [line width=2pt] (-22,6)-- (-7,6); %deuxième ligne
+\draw [line width=2pt] (-22,5)-- (-7,5); %troisième ligne
+\draw [line width=2pt] (-22,4)-- (-7,4); %quatrième ligne
+\draw [line width=2pt] (-22,4)-- (-22,8); %première colonne (-22,4)<----(-22,8);
+\draw [line width=2pt] (-18,8)-- (-18,4); %deuxième colone  (-18,8)--->(-18,4);
+\draw [line width=2pt] (-12,6)-- (-12,4); %troisième colonne(-13,6)--->(-13,4);
+%\draw [line width=2pt] (-12.1,6)-- (-12.1,4); %troisième colonne(-13,6)--->(-13,4);
+\draw [line width=2pt] (-7,8)-- (-7,4); %quatrième colonne (-7,8)-->(-7,4);
+\draw (-21,7) node[anchor=north west] {$x$};
+\draw (-21,5.9) node[anchor=north west] {$x+1$};
+\draw (-21,5) node[anchor=north west] {$\mid x+1\mid$};
+\draw (-15.8,5.9) node[anchor=north west] {$-$};
+\draw (-15.8,5) node[anchor=north west] {$-x-1$};
+\draw (-10.5,5.9) node[anchor=north west] {$+$};
+\draw (-10.5,5) node[anchor=north west] {$x+1$};
+\draw (-18,7) node[anchor=north west] {$-\infty$};
+\draw (-12.2,7) node[anchor=north west] {$-1$};
+\draw (-8,7) node[anchor=north west] {$+\infty$};
+\end{tikzpicture}
+\[ \mid x+1\mid\ = \begin{cases} 
+  -x-1, & \text{si } x < -1 \\
+  x+1, & \text{si } x > -1
+\end{cases} \]
+\textcolor{red}{\underline{En $-1^{-}$:}}
+\[\lim_{x \to -1}\mid x+1\mid=\lim_{x \to -1^{-}}-x-1=0\]
+\[\textcolor{red}{\boxed{\lim_{x \to -1}\mid x+1\mid=0}}\]
+\textcolor{red}{\underline{En $1^{+}$:}}
+\[\lim_{x \to -1}x\mid x+1\mid=\lim_{x \to -1^{+}}x+1=0\]
+\[\textcolor{red}{\boxed{\lim_{x \to -1}\mid x+1\mid=0}}\]
+\textcolor{green}{\[\text{Oui, }\lim_{x \to 0^{-}}f(x)=\lim_{x \to 0^{+}}f(x)=f(0)\text{ Donc f est continue en -1.}\]}
+
+La dérivable de f en -1:
+\[\text{A-t-on }\lim_{x \to -1^{-}}\frac{f(x)-f(-1)}{x+1}=\lim_{x \to -1^{+}}\frac{f(x)-f(-1)}{x+1}?\]
+
+\textcolor{red}{\underline{En $-1^{-}$:}}
+
+\[\lim_{x \to -1^{-}}\frac{f(x)-f(-1)}{x+1}=\lim_{x \to -1^{-}}\frac{-(x+1)}{x+1}=-1\]
+
+\textcolor{red}{\underline{En $-1^{+}$:}}
+
+\[\lim_{x \to -1^{+}}\frac{f(x)-f(-1)}{x+1}=\lim_{x \to -1^{+}}\frac{x+1}{x+1}=+1\]
+
+\textcolor{green}{\[\text{Non, }\lim_{x \to -1^{-}}\frac{f(x)-f(-1)}{x+1}\neq\lim_{x \to -1^{+}}\frac{f(x)-f(-1)}{x+1}\text{ Donc f n'est dérivable en -1}\]}
 \section*{\underline{Exercice 3}(5 points) :}
 \subsection*{ Dans chacun des cas suivants, calculer la dérivé de $f$}
 \[
