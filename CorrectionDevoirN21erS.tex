@@ -45,24 +45,24 @@
 \end{center}
 
 \section*{\underline{Exercice 1} (9 points) :}
-\subsection*{a) Calculer les limites suivantes (0,5 pt $\times$ 4)}
+\subsection*{1) Calculer les limites suivantes (0,5 pt $\times$ 4)}
 \[ \lim_{x \to 2}\frac{x^{2}-5x-14}{x^{2}+4x+4}\quad\quad 
 \lim_{x \to 2}\frac{4x^{2}-3x-1}{x^{3}-4x^{2}+2x+1}\quad\quad 
 \lim_{x \to 1}\frac{2x-\sqrt{x+1}-4}{x^{2}-2x-3}\quad\quad 
 \lim_{x \to 0}x\mid x+\frac{1}{x}\mid\]
-\subsection*{1) Dans chacun des cas suivants, calculer la limites en $+\infty$ et en $-\infty$ (1 pt $\times$ 4)}
+\subsection*{2) Dans chacun des cas suivants, calculer la limites en $+\infty$ et en $-\infty$ (1 pt $\times$ 4)}
 \[ f(x)=\frac{\sqrt{3x^{2}+1}}{3x-1}\quad\quad 
 g(x)=x+2+\sqrt{x^{2}-3x+1}\quad\quad 
 h(x)=\sqrt{x^{2}-2x-1}-\sqrt{x^{2}-7x+3} \]
 \[I(x)=\frac{x-\sqrt{x^{2}-3x+1}}{2x+\sqrt{4x^{2}+x}} \]
-\subsection*{2) Etudier de continuité: (0,5pt +1pt)}
+\subsection*{3) Etudier de continuité: (0,5pt +1pt)}
 \[ f(x) = \begin{cases} 
   -x+1-\frac{2x}{x^{2}+1}, & \text{si } x \leq 1 \\
   \frac{x-1}{\sqrt{x^{2}-2x+6}}, & \text{si } x > 1
 \end{cases} \]
 a)Déterminer le domaine de définition $D_{f}$\\
 b)Etudier la continuité de f en $x_{0}=1$
-\subsection*{3) Prolongement par continuité: (0,5pt +1pt)}
+\subsection*{4) Prolongement par continuité: (0,5pt +1pt)}
 Soit $h$ la fonction définie par:
 \[ h(x) = \begin{cases} 
   \sqrt{x^{2}-4}, & \text{si } x > 2 \\
@@ -144,11 +144,19 @@ Par quotient, forme infinie\\
 \textcolor{red}{\underline{En $+\infty$:}}
 \[\lim_{x \to +\infty}h(x)=\lim_{x \to +\infty}\sqrt{x^{2}-2x-1}-\sqrt{x^{2}-7x+3}=\lim_{x \to +\infty}\frac{\left( x^{2}-2x-1\right) -\left( x^{2}-7x+3\right)}{\sqrt{x^{2}-2x-1}+\sqrt{x^{2}-7x+3}}\]
  
-\[\lim_{x \to +\infty}h(x)=\lim_{x \to +\infty}\frac{5x-4}{\sqrt{x^{2}-2x-1}+\sqrt{x^{2}-7x+3}}=\lim_{x \to +\infty}\frac{x(5-\frac{4}{x})}{x\sqrt{1-\frac{2}{x}-\frac{1}{x^{2}}}x\sqrt{1-\frac{7}{x}+\frac{3}{x^{2}}}}\]
+\[\lim_{x \to +\infty}h(x)=\lim_{x \to +\infty}\frac{5x-4}{\sqrt{x^{2}-2x-1}+\sqrt{x^{2}-7x+3}}=\lim_{x \to +\infty}\frac{x(5-\frac{4}{x})}{x\sqrt{1-\frac{2}{x}-\frac{1}{x^{2}}}+x\sqrt{1-\frac{7}{x}+\frac{3}{x^{2}}}}\]
 \[\lim_{x \to +\infty}h(x)=\lim_{x \to +\infty}\frac{(5-\frac{4}{x})}{\left[\sqrt{1-\frac{2}{x}-\frac{1}{x^{2}}}+\sqrt{1-\frac{7}{x}+\frac{3}{x^{2}}}\right]}=\frac{5}{2}\] 
 \[\textcolor{red}{\boxed{\lim_{x \to -\infty}h(x)=\frac{5}{2}}}\]
-\[h(x)=\sqrt{x^{2}-2x-1}-\sqrt{x^{2}-7x+3} \]
-\[I(x)=\frac{x-\sqrt{x^{2}-3x+1}}{2x+\sqrt{4x^{2}+x}} \]
+
+\textcolor{blue}{\[I(x)=\frac{x-\sqrt{x^{2}-3x+1}}{2x+\sqrt{4x^{2}+x}}\]}
+\textcolor{red}{\underline{En $-\infty$:}}
+\[\lim_{x \to -\infty}I(x)=\lim_{x \to -\infty}\frac{x-\sqrt{x^{2}-3x+1}}{2x+\sqrt{4x^{2}+x}}=\lim_{x \to -\infty}\frac{x+x\sqrt{1-\frac{3}{x}+\frac{1}{x^{2}}}}{2x-x\sqrt{4+\frac{1}{x}}}=\lim_{x \to -\infty}\frac{x\left[1+\sqrt{1-\frac{3}{x}+\frac{1}{x^{2}}}\right]}{x\left[ \frac{2}{x}-\sqrt{4+\frac{1}{x}}\right]}\]
+\[\lim_{x \to -\infty}I(x)=\lim_{x \to -\infty}\frac{\left[1+\sqrt{1-\frac{3}{x}+\frac{1}{x^{2}}}\right]}{\left[ \frac{2}{x}-\sqrt{4+\frac{1}{x}}\right]}=\frac{2}{-\sqrt{4}}\]
+\[\textcolor{red}{\boxed{\lim_{x \to -\infty}I(x)=-1}}\]
+\textcolor{red}{\underline{En $+\infty$:}}
+\[\lim_{x \to +\infty}I(x)=\lim_{x \to +\infty}\frac{x-\sqrt{x^{2}-3x+1}}{2x+\sqrt{4x^{2}+x}}=\lim_{x \to +\infty}\frac{x-x\sqrt{1-\frac{3}{x}+\frac{1}{x^{2}}}}{2x+x\sqrt{4+\frac{1}{x}}}=\lim_{x \to +\infty}\frac{x\left[1-\sqrt{1-\frac{3}{x}+\frac{1}{x^{2}}}\right]}{x\left[ \frac{2}{x}+\sqrt{4+\frac{1}{x}}\right]}\]
+\[\lim_{x \to +\infty}I(x)=\lim_{x \to +\infty}\frac{\left[1-\sqrt{1-\frac{3}{x}+\frac{1}{x^{2}}}\right]}{\left[ \frac{2}{x}+\sqrt{4+\frac{1}{x}}\right]}=\frac{0}{\sqrt{4}}\]
+\[\textcolor{red}{\boxed{\lim_{x \to +\infty}I(x)=0}}\]
 \section*{\underline{Exercice 2}(3 points) :}
 \subsection*{a) Dans chaque cas, justifier que f est dérivable sur I. (1,5 pts)}
 \[f(x)=(2x^{2}-1)(x-3)^{4};\quad I=\mathbb{R}\quad\quad g(x)=\frac{-3}{x^{3}-1};\quad I=\mathbb{R}\setminus\left\lbrace 1 \right\rbrace \quad\quad I(x)=\sqrt{3x^{2}+x+7};\quad I=\mathbb{R}\]
