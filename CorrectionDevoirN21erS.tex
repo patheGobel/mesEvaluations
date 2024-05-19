@@ -71,7 +71,7 @@ Soit $h$ la fonction définie par:
 a)Déterminer $D_{h}$.\\
 b)La fonction h est-elle prolongeable par continuité en $2$ ?
 \section*{\textcolor{red}{\underline{Correction Exercice 1} (9 points) :}}
-\subsection*{a) Calculons les limites suivantes (0,5 pt $\times$ 4)}
+\subsection*{\textcolor{green}{a) Calculons les limites suivantes (0,5 pt $\times$ 4)}}
 \[ \lim_{x \to 2}\frac{x^{2}-5x-14}{x^{2}+4x+4}=-\frac{5}{4}\]
 \[\lim_{x \to 2}\frac{4x^{2}-3x-1}{x^{3}-4x^{2}+2x+1}=-3\]
 \[\lim_{x \to 1}\frac{2x-\sqrt{x+1}-4}{x^{2}-2x-3}=\frac{2+\sqrt{2}}{4}\]
@@ -112,7 +112,7 @@ Par quotient, forme infinie\\
 \textcolor{red}{\underline{En $0^{+}$:}}
 \[\lim_{x \to 0}x\mid x+\frac{1}{x}\mid=\lim_{x \to 0^{+}}x^{2}+1=1\]
 \[\textcolor{red}{\boxed{\lim_{x \to 0}x\mid x+\frac{1}{x}\mid=1}}\]
-\subsection*{1) Calculons la limites en $+\infty$ et en $-\infty$ (1 pt $\times$ 4)}
+\subsection*{\textcolor{green}{1) Calculons la limites en $+\infty$ et en $-\infty$ (1 pt $\times$ 4)}}
 \textcolor{blue}{\[ f(x)=\frac{\sqrt{3x^{2}+1}}{3x-1}\]} 
 \textcolor{red}{\underline{En $-\infty$:}}
 \[\lim_{x \to -\infty}f(x)=\lim_{x \to -\infty}\frac{\sqrt{x^{2}(3+\frac{1}{x^{2}})}}{x(3-\frac{1}{x})}=\lim_{x \to -\infty}\frac{\sqrt{x^{2}}\sqrt{(3+\frac{1}{x^{2}})}}{x(3-\frac{1}{x})}=\lim_{x \to -\infty}\frac{|x|\sqrt{(3+\frac{1}{x^{2}})}}{x(3-\frac{1}{x})}=\lim_{x \to -\infty}\frac{-x\sqrt{(3+\frac{1}{x^{2}})}}{x(3-\frac{1}{x})}\]
@@ -157,7 +157,7 @@ Par quotient, forme infinie\\
 \[\lim_{x \to +\infty}I(x)=\lim_{x \to +\infty}\frac{x-\sqrt{x^{2}-3x+1}}{2x+\sqrt{4x^{2}+x}}=\lim_{x \to +\infty}\frac{x-x\sqrt{1-\frac{3}{x}+\frac{1}{x^{2}}}}{2x+x\sqrt{4+\frac{1}{x}}}=\lim_{x \to +\infty}\frac{x\left[1-\sqrt{1-\frac{3}{x}+\frac{1}{x^{2}}}\right]}{x\left[ \frac{2}{x}+\sqrt{4+\frac{1}{x}}\right]}\]
 \[\lim_{x \to +\infty}I(x)=\lim_{x \to +\infty}\frac{\left[1-\sqrt{1-\frac{3}{x}+\frac{1}{x^{2}}}\right]}{\left[ \frac{2}{x}+\sqrt{4+\frac{1}{x}}\right]}=\frac{0}{\sqrt{4}}\]
 \[\textcolor{red}{\boxed{\lim_{x \to +\infty}I(x)=0}}\]
-\subsection*{3) Etudions de continuité: (0,5pt +1pt)}
+\subsection*{\textcolor{green}{3) Etudions de continuité: (0,5pt +1pt)}}
 \[ f(x) = \begin{cases} 
   -x+1-\frac{2x}{x^{2}+1}, & \text{si } x \leq 1 \\
   \frac{x-1}{\sqrt{x^{2}-2x+6}}, & \text{si } x > 1
@@ -186,9 +186,37 @@ b)Etudions la continuité de f en $x_{0}=1$
 
 \textcolor{red}{\underline{En $1^{+}$:}}
 
-\[\lim_{x \to 1^{+}}f_{2}(x)=\lim_{x \to 1^{+}}f_{2}\frac{x-1}{\sqrt{x^{2}-2x+6}}\]
+\[\lim_{x \to 1^{+}}f_{2}(x)=\lim_{x \to 1^{+}}\frac{x-1}{\sqrt{x^{2}-2x+6}}\]
 \[\lim_{x \to 1^{+}}f(x)=0\]
-\[\text{Non,} \lim_{x \to 1^{-}}f(x)=\lim_{x \to 1^{+}}f(x) \text{ Donc f n'est pas continuen }\]
+\[\text{Non,} \lim_{x \to 1^{-}}f(x)\neq\lim_{x \to 1^{+}}f(x) \text{ Donc f n'est pas continu en 1 }\]
+\subsection*{ \textcolor{green}{4)Prolongement par continuité: (0,5pt +1pt)}}
+Soit $h$ la fonction définie par:
+\[ h(x) = \begin{cases} 
+  \sqrt{x^{2}-4}, & \text{si } x > 2 \\
+  \sqrt{x^{2}-9x+14}, & \text{si } x < 2
+\end{cases} \]
+a)Déterminons $Dh$.\\
+\[\text{Posons: } h(x) = \begin{cases} 
+  h_{1}(x)=\sqrt{x^{2}-4}, & \text{si } x > 2 \\
+  h_{2}(x)=\sqrt{x^{2}-9x+14}, & \text{si } x < 2
+\end{cases} \]
+\begin{itemize}
+\item[•]$h_{1}$ existe ssi $x^{2}-4\geq0 \Rightarrow x\in \left( \left]-\infty, -1\right] \cup \left[1, +\infty\right[ \right) $ et $x \in\left( \left]2, +\infty\right[\right) \Rightarrow x\in \left[ \left( \left]-\infty, -1\right] \cup \left[1, +\infty\right[ \right)\cap\left( \left]2, +\infty\right[\right) \right] $
+\[Dh_{1}=\left]2, +\infty\right[ \]
+\item[•]$h_{2}$ existe ssi $x^{2}-9x+14 \geq 0. \Delta = 25. \Rightarrow x_{1}=2, x_{2}=7$\\
+Donc $h_{2}$ existe ssi $x\in \left( \left]-\infty, 2\right] \cup \left[7, +\infty\right[ \right) $ et $x \in\left( \left]-\infty, 2\right[\right) \Rightarrow x\in \left[ \left( \left]-\infty, 2\right] \cup \left[7, +\infty\right[ \right)\cap\left( \left]-\infty, 2\right[\right) \right]$
+\[Dh_{2}=\left]-\infty, 2\right[ \] 
+\end{itemize}
+Finalement, Dh=$\mathbb{R}\setminus\left\lbrace 2 \right\rbrace $
+
+b)Prolongeable par continuité en $2$ ?
+$D_{H}=\mathbb{R}\setminus\{1\}$\\
+\[\text{On a 2 }\notin \text{Df et } \lim_{x \to 2^{-}}\sqrt{x^{2}-9x+14}=\lim_{x \to 2^{+}}\sqrt{x^{2}-4}=0\]
+Donc f est prologeable par continuité en $x_{0}=2$ et son prolongement par continuité en $x_{0}=2$ est 
+\[ g(x) = \begin{cases} 
+  f(x), & \text{si } x \neq 2 \\
+  0, & \text{si } x= 2
+\end{cases} \]
 \section*{\underline{Exercice 2}(3 points) :}
 \subsection*{a) Dans chaque cas, justifier que f est dérivable sur I. (1,5 pts)}
 \[f(x)=(2x^{2}-1)(x-3)^{4};\quad I=\mathbb{R}\quad\quad g(x)=\frac{-3}{x^{3}-1};\quad I=\mathbb{R}\setminus\left\lbrace 1 \right\rbrace \quad\quad I(x)=\sqrt{3x^{2}+x+7};\quad I=\mathbb{R}\]
