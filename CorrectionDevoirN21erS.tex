@@ -1,4 +1,4 @@
-\documentclass[12pt]{article}
+\documentclass{article}
 \usepackage{stmaryrd}
 \usepackage{graphicx}
 \usepackage[utf8]{inputenc}
@@ -26,7 +26,7 @@
 \usepackage[margin=2cm]{geometry}
 \begin{document}
 
-\begin{minipage}{0.5\textwidth}
+\begin{minipage}{0.7\textwidth}
 	Ministère de l'éducation nationale  \\
 	Inspection académique de Kédougou   \\
 	Lycée de Dindéfélo            \\
@@ -36,12 +36,12 @@
 \end{minipage}
 \begin{minipage}{0.5\textwidth}
 	Année scolaire 2023-2024 \\
-	Date : 14-05-2024 \\
-	Durée : 4h 00 \\
+	Date : 08-05-2024 \\
+	Durée : 3h 00 \\
 \end{minipage}
 
 \begin{center}
-	\textbf{{\underline{Devoir N2 Du Second Semestre}}}
+	\section*{\textcolor{red}{\underline{Correction du Devoir N2 Du Second Semestre}}}
 \end{center}
 
 \section*{\underline{Exercice 1} (9 points) :}
@@ -157,6 +157,38 @@ Par quotient, forme infinie\\
 \[\lim_{x \to +\infty}I(x)=\lim_{x \to +\infty}\frac{x-\sqrt{x^{2}-3x+1}}{2x+\sqrt{4x^{2}+x}}=\lim_{x \to +\infty}\frac{x-x\sqrt{1-\frac{3}{x}+\frac{1}{x^{2}}}}{2x+x\sqrt{4+\frac{1}{x}}}=\lim_{x \to +\infty}\frac{x\left[1-\sqrt{1-\frac{3}{x}+\frac{1}{x^{2}}}\right]}{x\left[ \frac{2}{x}+\sqrt{4+\frac{1}{x}}\right]}\]
 \[\lim_{x \to +\infty}I(x)=\lim_{x \to +\infty}\frac{\left[1-\sqrt{1-\frac{3}{x}+\frac{1}{x^{2}}}\right]}{\left[ \frac{2}{x}+\sqrt{4+\frac{1}{x}}\right]}=\frac{0}{\sqrt{4}}\]
 \[\textcolor{red}{\boxed{\lim_{x \to +\infty}I(x)=0}}\]
+\subsection*{3) Etudions de continuité: (0,5pt +1pt)}
+\[ f(x) = \begin{cases} 
+  -x+1-\frac{2x}{x^{2}+1}, & \text{si } x \leq 1 \\
+  \frac{x-1}{\sqrt{x^{2}-2x+6}}, & \text{si } x > 1
+\end{cases} \]
+a)Déterminons le domaine de définition $D_{f}$\\
+\[\text{Posons: } f(x) = \begin{cases} 
+  f_{1}(x)=-x+1-\frac{2x}{x^{2}+1}, & \text{si } x \leq 1 \\
+  f_{2}(x)=\frac{x-1}{\sqrt{x^{2}-2x+6}}, & \text{si } x > 1
+\end{cases} \]
+\begin{itemize}
+\item[•] $f_{1}$ existe ssi $x^{2}+1\neq 0$ et $x \leq 1$\\
+$x^{2}\neq -1$ et $x \leq 1 \Rightarrow x\in\mathbb{R}$ et $x\in\left] -\infty; 1\right] \Rightarrow x\in\left( \mathbb{R}\cap \left] -\infty; 1\right]\right) $\\
+Donc $Df_{1}=\left] -\infty; 1\right]$
+\item[•] $f_{2}$ existe ssi $x^{2}-2x+6>0$ et $x > 1 \Rightarrow x\in\mathbb{R}$ et $x\in\left] 1, +\infty \right[\Rightarrow x\in\left(\mathbb{R}\cap\left] 1, +\infty \right[\right)$\\
+Donc $Df_{2}=\left] 1, +\infty \right[$
+\end{itemize}
+Donc $Df_{2}=\left] 1, +\infty \right[$\\
+Finalement, $Df=Df_{1}\cap Df_{2}$\\
+$Df=\mathbb{R}$
+
+b)Etudions la continuité de f en $x_{0}=1$
+
+\textcolor{red}{\underline{En $1^{-}$:}}
+\[\text{A-t-on,} \lim_{x \to 1^{-}}f(x)=\lim_{x \to 1^{+}}f(x)?\]
+\[\lim_{x \to 1^{-}}f(x)=\lim_{x \to 1^{-}}-x+1-\frac{2x}{x^{2}+1}=-1\]
+
+\textcolor{red}{\underline{En $1^{+}$:}}
+
+\[\lim_{x \to 1^{+}}f_{2}(x)=\lim_{x \to 1^{+}}f_{2}\frac{x-1}{\sqrt{x^{2}-2x+6}}\]
+\[\lim_{x \to 1^{+}}f(x)=0\]
+\[\text{Non,} \lim_{x \to 1^{-}}f(x)=\lim_{x \to 1^{+}}f(x) \text{ Donc f n'est pas continuen }\]
 \section*{\underline{Exercice 2}(3 points) :}
 \subsection*{a) Dans chaque cas, justifier que f est dérivable sur I. (1,5 pts)}
 \[f(x)=(2x^{2}-1)(x-3)^{4};\quad I=\mathbb{R}\quad\quad g(x)=\frac{-3}{x^{3}-1};\quad I=\mathbb{R}\setminus\left\lbrace 1 \right\rbrace \quad\quad I(x)=\sqrt{3x^{2}+x+7};\quad I=\mathbb{R}\]
