@@ -127,10 +127,17 @@ l'idée est d'écrire $a$ et $b$ sous forme exponentielle \\
 
 \[a=-\sqrt{2}\left( \frac{1+\sqrt{3}}{2}\right) \left[\cos(\frac{\pi}{4})-i\sin(\frac{\pi}{4})\right]=-\sqrt{2}\left( \frac{1+\sqrt{3}}{2}\right)e^{-i\frac{\pi}{4}}\]\\
 \[b=-\sqrt{2}\left( \frac{1+\sqrt{3}}{2}\right) \left[\cos(\frac{\pi}{4})+i\sin(\frac{\pi}{4})\right]=-\sqrt{2}\left( \frac{1+\sqrt{3}}{2}\right)e^{i\frac{\pi}{4}}\]
+$\frac{1-a}{b-a}=\frac{1+(\frac{1+\sqrt{3}}{2})(1-i)}{(\frac{1+\sqrt{3}}{2})(1-i)+(\frac{1+\sqrt{3}}{2})(1+i)}=
+\frac{\left( \frac{3+\sqrt{3}}{2}\right) -i\left(\frac{1+\sqrt{3}}{2}\right)}{-i\left( 1+\sqrt{3}\right) }$
 
-$\frac{1-a}{b-a}=\frac{1+\sqrt{2}\left( \frac{1+\sqrt{3}}{2}\right)e^{-i\frac{\pi}{4}}}{-\sqrt{2}\left( \frac{1+\sqrt{3}}{2}\right)e^{i\frac{\pi}{4}}+\sqrt{2}\left( \frac{1+\sqrt{3}}{2}\right)e^{-i\frac{\pi}{4}}}=\frac{1+\sqrt{2}\left( \frac{1+\sqrt{3}}{2}\right)e^{-i\frac{\pi}{4}}}{\sqrt{2}\left( \frac{1+\sqrt{3}}{2}\right)\left[e^{-i\frac{\pi}{4}}-e^{i\frac{\pi}{4}}\right]}=\frac{1+\sqrt{2}\left( \frac{1+\sqrt{3}}{2}\right)e^{-i\frac{\pi}{4}}}{\sqrt{2}\left( \frac{1+\sqrt{3}}{2}\right)\left[-i\sqrt{2}\right]}=\frac{i+\sqrt{2}\left( \frac{1+\sqrt{3}}{2}\right)e^{-i\frac{\pi}{4}}.i}{\left(1+\sqrt{3}\right)}$
 
-$\frac{1-a}{b-a}=\frac{e^{\frac{i\pi}{2}}+\sqrt{2}\left( \frac{1+\sqrt{3}}{2}\right)e^{-i\frac{\pi}{4}}.e^{\frac{i\pi}{2}}}{1+\sqrt{3}}=\frac{e^{\frac{i\pi}{2}}+\sqrt{2}\left( \frac{1+\sqrt{3}}{2}\right)e^{-i\frac{\pi}{2}}}{\left(1+\sqrt{3}\right)}$
+Donc $\frac{1-a}{b-a}=\frac{\left( \frac{3+\sqrt{3}}{2}\right) -i\left(\frac{1+\sqrt{3}}{2}\right)}{-i\left( 1+\sqrt{3}\right)}=\frac{\left(\frac{1+\sqrt{3}}{2}\right)+i\left(\frac{3+\sqrt{3}}{2}\right)}{1+\sqrt{3}}=\frac{1}{2}-\frac{\sqrt{3}}{2}i$
+
+\[\text{Donc, }\color{red}{\boxed{\frac{1-a}{b-a}=\cos(\frac{\pi}{3})-i\sin(\frac{\pi}{3})}}\]
+b)Comme arg($\frac{1-a}{b-a})$=$-\frac{\pi}{3}[2\pi]$ donc le triangle ABC best un triangle isocèle en A
+%$\frac{1-a}{b-a}=\frac{1+\sqrt{2}\left( \frac{1+\sqrt{3}}{2}\right)e^{-i\frac{\pi}{4}}}{-\sqrt{2}\left( \frac{1+\sqrt{3}}{2}\right)e^{i\frac{\pi}{4}}+\sqrt{2}\left( \frac{1+\sqrt{3}}{2}\right)e^{-i\frac{\pi}{4}}}=\frac{1+\sqrt{2}\left( \frac{1+\sqrt{3}}{2}\right)e^{-i\frac{\pi}{4}}}{\sqrt{2}\left( \frac{1+\sqrt{3}}{2}\right)\left[e^{-i\frac{\pi}{4}}-e^{i\frac{\pi}{4}}\right]}=\frac{1+\sqrt{2}\left( \frac{1+\sqrt{3}}{2}\right)e^{-i\frac{\pi}{4}}}{\sqrt{2}\left( \frac{1+\sqrt{3}}{2}\right)\left[-i\sqrt{2}\right]}=\frac{i+\sqrt{2}\left( \frac{1+\sqrt{3}}{2}\right)e^{-i\frac{\pi}{4}}.i}{\left(1+\sqrt{3}\right)}$
+
+%$\frac{1-a}{b-a}=\frac{e^{\frac{i\pi}{2}}+\sqrt{2}\left( \frac{1+\sqrt{3}}{2}\right)e^{-i\frac{\pi}{4}}.e^{\frac{i\pi}{2}}}{1+\sqrt{3}}=\frac{e^{\frac{i\pi}{2}}+\sqrt{2}\left( \frac{1+\sqrt{3}}{2}\right)e^{-i\frac{\pi}{2}}}{\left(1+\sqrt{3}\right)}$
 %$\frac{1-a}{b-a}=\frac{1+(\frac{1+\sqrt{3}}{2})(1-i)}{-(\frac{1+\sqrt{3}}{2})(1+i)+(\frac{1+\sqrt{3}}{2})(1-i)}=\frac{}{(\frac{1+\sqrt{3}}{2})}$
 \section*{\textcolor{red}{\underline{Problème} (12,25 points) :}}
 \subsection*{Partie A:(5,5 pts)}
@@ -338,7 +345,7 @@ les bornes de $Dh$ sont $-\infty$, 1 et $+\infty$
 \end{cases}
 \end{equation*}
 \textcolor{red}{\[\text{Par composition,}\lim_{x \to -\infty}\ln(-x+e^{x-1})=+\infty\quad\text{et par somme,}\lim_{x \to -\infty}h(x)=+\infty\]} 
-\textcolor{red}{\[\text{donc,}\quad h(x)=+\infty\]}
+\textcolor{red}{\[\text{donc,}\quad \lim_{x \to -\infty}h(x)=+\infty\]}
 
 \underline{En $+\infty$}:
 \begin{equation*}
@@ -396,6 +403,15 @@ Levons l'indétermination
 \textcolor{red}{\[\text{Donc}\lim_{x \to 1 }h(x)=\infty\text{\quad donc x=1 est une AV}\]}
 
 \textcolor{red}{\[\text{donc,}\lim_{x \to +\infty}h(x)=-1\text{\quad donc y=-1 est une AH}\]}
+
+\textbf{Etudions le comportement de  $\Gamma$ au voisinage de $-\infty$}
+
+\textcolor{red}{\[\text{Comme}\quad \lim_{x \to -\infty}h(x)=+\infty\]}
+\[\lim_{x \to -\infty}\frac{h(x)}{x}=\lim_{x \to -\infty}\frac{-x+\ln(-x+e^{x-1})}{x}=\lim_{x \to -\infty}-1+\frac{\ln(-x+e^{x-1})}{x}=-1\]
+
+\[\lim_{x \to -\infty}\left[ h(x)+x\right] =\lim_{x \to -\infty}\ln(-x+e^{x-1})=+\infty\]
+
+\textcolor{red}{Donc $y=-x$ est une A.O à $\Gamma$ au voisinage de $-\infty$}
 
 b)Montrons que $\forall x>1, h(x)=\ln(-xe^{-x}+e^{-1}) $ 
 
