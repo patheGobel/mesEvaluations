@@ -1,0 +1,468 @@
+\documentclass[12pt]{article}
+\usepackage{stmaryrd}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\usepackage{verbatim}
+
+\usepackage{color, soul}
+
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tkz-tab}
+
+\usepackage{tikz}
+\usetikzlibrary{arrows, shapes.geometric, fit}
+
+
+\usepackage[margin=2cm]{geometry}
+
+\begin{document}
+
+\begin{minipage}{0.5\textwidth}
+	Ministère de l'éducation nationale  \\
+	Inspection académique de Kédougou   \\
+	Lycée de Dindéferlo            \\
+	Cellule de mathématiques            \\
+	M. BA                          \\
+	Classe : $2^{nd}$S  \\
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+	Année scolaire 2023-2024 \\
+	Date : 14-05-2024 \\
+	Durée : 3h 00 \\
+\end{minipage}
+
+\begin{center}
+	\textbf{{\underline{\textcolor{red}{Correction Devoir N1 Du Second Semestre}}}}
+\end{center}
+
+\section*{EXERCICE 1 (7 points)}   
+Soit l’équation (E): \((m -1)x^2 + 2(m + 2)x - m + 3 = 0\).
+
+\begin{enumerate}
+    \item 
+    \begin{enumerate}
+        \item Déterminer \(m\) pour que \(-1\) soit racine de (E).\textbf{(0,5 pt)}
+        
+        \item Déterminer alors l’autre racine. \textbf{(0,5 pt)}
+    \end{enumerate}
+
+    \item Déterminer l’ensemble des réels \(m\) tels que l’équation admette deux racines \(x'\) et \(x''\) vérifiant la condition donnée dans chacun des cas suivants :
+    \begin{enumerate}
+        \item \(x'\) et \(x''\) sont inverses ;\textbf{(1 pt)}
+        
+        \item \(x'\) et \(x''\) sont opposés ;\textbf{(1 pt)}
+        
+        \item \(x'\) et \(x''\) sont de signes opposés ;\textbf{(1 pt)}
+        
+        \item \(x'\) et \(x''\) sont de signe positif ;\textbf{(1 pt)}
+        
+        \item \(\frac{1}{2x'-1} + \frac{1}{2x''-1} = 6\).
+    \end{enumerate}
+
+    \item Former une relation entre les racines \(x'\) et \(x''\) indépendante de \(m\).\textbf{(1 pt)}
+
+    \item Former une équation du second degré dont les racines sont \(X_1 = \frac{1}{x' - 2}\) et \(X_2 = \frac{1}{x'' - 2}\).\textbf{(1 pt)}
+\end{enumerate}
+\section*{\textcolor{red}{\underline{Correction Exercice 1} (7 points) :}}
+Soit l’équation (E): $(m -1)x^2 + 2(m + 2)x - m + 3 = 0$.
+
+\begin{enumerate}
+    \item 
+    \begin{enumerate}
+        \item Déterminer $m$ pour que $-1$ soit racine de (E). \textbf{(0,5 pt)}
+        
+        Pour que $-1$ soit une racine de (E), on substitue $x = -1$ dans l'équation et on résout pour $m$ :
+        \[
+        (m -1)(-1)^2 + 2(m + 2)(-1) - m + 3 = 0
+        \]
+        \[
+        m - 1 - 2m - 4 - m + 3 = 0
+        \]
+        \[
+        -2m - 2 = 0
+        \]
+        \[
+        m = -1
+        \]
+        Donc, $m = -1$ pour que $-1$ soit une racine de (E).
+        
+        \item Déterminer alors l’autre racine. \textbf{(0,5 pt)}
+        
+        Une fois que nous avons $m = -1$, nous pouvons utiliser cette valeur pour trouver l'autre racine. Nous remplaçons $m$ par $-1$ dans l'équation (E) et résolvons pour $x$ :
+        \[
+        (-1 - 1)x^2 + 2(-1 + 2)x - (-1) + 3 = 0
+        \]
+        \[
+        -2x^2 + 2x + 2 = 0
+        \]
+        \[
+        -x^2 + x + 1 = 0
+        \]
+        Cette équation peut être résolue en utilisant la méthode de résolution quadratique ou en factorisant. Les solutions sont $x = 1$ et $x = -1$.
+    \end{enumerate}
+
+    \item Déterminer l’ensemble des réels $m$ tels que l’équation admette deux racines $x'$ et $x''$ vérifiant la condition donnée dans chacun des cas suivants :
+    \begin{enumerate}
+        \item $x'$ et $x''$ sont inverses. \textbf{(1 pt)}
+        
+        Les racines $x'$ et $x''$ sont inverses si leur produit est égal à $1$ :
+        \[
+        x' \cdot x'' = 1
+        \]
+        \[
+        \frac{c}{a} = \frac{-m + 3}{m - 1} = 1
+        \]
+        Cela donne $-m + 3 = m - 1$, donc $m = 2$.
+        
+        \item $x'$ et $x''$ sont opposés. \textbf{(1 pt)}
+        
+        Les racines $x'$ et $x''$ sont opposées si leur somme est égale à zéro :
+        \[
+        x' + x'' = 0
+        \]
+        \[
+        \frac{-b}{a} = \frac{-2(m + 2)}{m - 1} = 0
+        \]
+        Cela conduit à $2(m + 2) = 0$, donc $m = -2$.
+        
+        \item $x'$ et $x''$ sont de signes opposés. \textbf{(1 pt)}
+        
+       Pour que les racines soient de signes opposés, leur produit doit être négatif :
+       \[
+        x' \cdot x'' < 0
+       \]
+%        \[
+%        \frac{c}{a} = \frac{-m + 3}{m - 1} < 0
+ %       \]
+%        Cela conduit à deux intervalles pour $m$: $m < 1$ ou $m > 3$.
+        
+ %       \item $x'$ et $x''$ sont de signe positif. \textbf{(1 pt)}
+        
+%        Pour que les racines soient de signe positif, elles doivent toutes deux être positives :
+%        \[
+ %       x' > 0 \quad \text{et} \quad x'' > 0
+%        \]
+%        Nous devons considérer les cas où $a > 0$ et $a < 0$ séparément. Si $a > 0$, les racines seront négatives. Si $a < 0$, les racines seront positives.
+        
+%        \item $\frac{1}{2x'-1} + \frac{1}{2x''-1} = 6$. \textbf{(1 pt)}
+        
+%        En utilisant les valeurs de $x'$ et $x''$ trouvées précédemment, nous substituons ces valeurs dans l'équation pour déterminer les valeurs de $m$ qui satisfont cette condition.
+    \end{enumerate}
+
+%    \item Former une relation entre les racines $x'$ et $x''$ indépendante de $m$. \textbf{(1 pt)}
+    
+%    En utilisant les solutions de l'équation quadratique, nous pouvons exprimer cette relation :
+%    \[
+%    x' \cdot x'' = \frac{c}{a}
+%    \]
+
+%    \item Former une équation du second degré dont les racines sont $X_1 = \frac{1}{x' - 2}$ et $X_2 = \frac{1}{x'' - 2}$. \textbf{(1 pt)}
+    
+%    Nous pouvons utiliser la méthode de substitution pour trouver cette équation.
+\end{enumerate}
+
+\section*{EXERCICE 2 (4,5 points)}
+
+\begin{enumerate}
+    \item Résoudre par la méthode du déterminant de Cramer le système (A) suivant :\textbf{(1,5 pt)}
+    \[
+    \begin{cases}
+    2x + y = 4 \\
+    3x + 2y = 7
+    \end{cases}
+    \]
+
+    \item Résoudre ce système par une méthode autre que le déterminant de Cramer.\textbf{(1,5 pt)}
+
+    \item On suppose que l’unique solution du système (A) est \((1, 2)\). En déduire l’ensemble des solutions des systèmes suivants :\textbf{(0,5 $\times$ 3 pt)}
+    \begin{enumerate}
+        \item 
+        \[
+        \begin{cases}
+        2x^2 + \frac{1}{y} = 4 \\
+        -3x^2 - \frac{2}{y} = -7
+        \end{cases}
+        \]
+        
+        \item 
+        \[
+        \begin{cases}
+        2|x - 1| + \sqrt{y} = 4 \\
+        2|x - 1| + 2\sqrt{y} = 7
+        \end{cases}
+        \]
+        
+        \item 
+        \[
+        \begin{cases}
+        -\frac{2}{x} - \frac{1}{y} = 4 \\
+        \frac{3}{x} + \frac{2}{y} = -7
+        \end{cases}
+        \]
+    \end{enumerate}
+\end{enumerate}
+\section*{\textcolor{red}{\underline{Correction Exercice 2} (4,5 points) :}}
+1) Calcul du déterminant principal $\Delta$ :
+\[
+\Delta = \begin{vmatrix}
+2 & 1 \\
+3 & 2
+\end{vmatrix} = (2 \times 2) - (1 \times 3) = 4 - 3 = 1
+\]
+
+Calcul des déterminants $\Delta_x$ et $\Delta_y$ :
+\[
+\Delta_x = \begin{vmatrix}
+4 & 1 \\
+7 & 2
+\end{vmatrix} = (4 \times 2) - (1 \times 7) = 8 - 7 = 1
+\]
+\[
+\Delta_y = \begin{vmatrix}
+2 & 4 \\
+3 & 7
+\end{vmatrix} = (2 \times 7) - (4 \times 3) = 14 - 12 = 2
+\]
+
+Calcul des valeurs de $x$ et $y$ :
+\[
+x = \frac{\Delta_x}{\Delta} = \frac{1}{1} = 1, \quad y = \frac{\Delta_y}{\Delta} = \frac{2}{1} = 2
+\]
+
+Donc, la solution du système (A) est $ (x, y) = (1, 2) $.
+
+2) On peut résoudre ce système par substitution ou élimination.
+
+3) Vérification des autres systèmes avec la solution $ (1, 2) $ :
+
+a) Pour le premier système :
+\[
+\begin{cases}
+2(1)^2 + \frac{1}{2} = 4 \\
+-3(1)^2 - \frac{2}{2} = -7
+\end{cases}
+\]
+\[
+\begin{cases}
+2 + \frac{1}{2} = 4 \\
+-3 - 1 = -7
+\end{cases}
+\]
+Ce système est vérifié avec $x = 1$ et $y = 2$.
+
+b) Pour le deuxième système, $2|x - 1| + \sqrt{y} = 4$ devrait être vérifié avec $x = 1$ et $y = 2$, mais $2|x - 1| + 2\sqrt{y} = 7$ ne correspond pas.
+
+c) Pour le troisième système, $ -\frac{2}{x} - \frac{1}{y} = 4 $ devrait être vérifié avec $x = 1$ et $y = 2$, mais $ \frac{3}{x} + \frac{2}{y} = -7 $ ne correspond pas.
+
+\section*{Exercice 3 : (5 points)}
+
+Dans le plan muni d’un repère orthonormal, on considère la droite d’équation \(-4x + 3y + 1 = 0\) et les points \(A(2, -3)\), \(B(1, 1)\) et \(C(-2, -3)\).\\
+On fera une figure que l’on complétera.
+
+\begin{enumerate}
+    \item Montrer que la droite (L) passe par les points B et C.\textbf{(0,5 pt)}
+
+    \item Trouver un système d’équations paramétriques de la droite (L).\textbf{(1,5 pt)}
+
+    \item Trouver une équation cartésienne de la droite (D) qui passe par le point \(E(-1, -7)\) et de vecteur directeur \(\vec{u}(3, 5)\).\textbf{(1,5 pt)}
+
+    \item Étudier la position relative des droites (L) et (D).\textbf{(1,5 pt)}
+\end{enumerate}
+\section*{\textcolor{red}{\underline{Correction Exercice 3} (5 points) :}}
+\begin{enumerate}
+    \item Montrons que la droite (L) passe par les points \(B\) et \(C\).
+    
+    \begin{itemize}
+        \item Pour le point \(B(1, 1)\) :
+        \[
+        -4 \times 1 + 3 \times 1 + 1 = -4 + 3 + 1 = 0
+        \]
+        Le point \(B\) vérifie l'équation de la droite (L).
+
+        \item Pour le point \(C(-2, -3)\) :
+        \[
+        -4 \times (-2) + 3 \times (-3) + 1 = 8 - 9 + 1 = 0
+        \]
+        Le point \(C\) vérifie l'équation de la droite (L).
+    \end{itemize}
+    Donc, la droite (L) passe par les points \(B\) et \(C\).
+
+    \item Trouvons un système d’équations paramétriques de la droite (L).
+
+    Un vecteur directeur de (L) est \(\vec{d}(3, 4)\).\\
+    Un point de (L) est \(B(1, 1)\).
+
+    Les équations paramétriques sont :
+    \[
+    \begin{cases}
+    x = 1 + 3t \\
+    y = 1 + 4t
+    \end{cases}
+    \]
+    où \(t \in \mathbb{R}\).
+
+    \item Trouvons une équation cartésienne de la droite (D) qui passe par le point \(E(-1, -7)\) et de vecteur directeur \(\vec{u}(3, 5)\).
+
+    L'équation paramétrique de (D) est :
+    \[
+    \begin{cases}
+    x = -1 + 3t \\
+    y = -7 + 5t
+    \end{cases}
+    \]
+    où \(t \in \mathbb{R}\).
+
+    Pour trouver l'équation cartésienne, nous éliminons \(t\) :
+    \[
+    t = \frac{x + 1}{3} = \frac{y + 7}{5}
+    \]
+    Donc, l'équation cartésienne est :
+    \[
+    5(x + 1) = 3(y + 7)
+    \]
+    \[
+    5x + 5 = 3y + 21
+    \]
+    \[
+    5x - 3y = 16
+    \]
+
+    \item Étudions la position relative des droites (L) et (D).
+
+    Les vecteurs directeurs des droites (L) et (D) sont respectivement \(\vec{d}(3, 4)\) et \(\vec{u}(3, 5)\).
+
+    Calculons le déterminant :
+    \[
+    \begin{vmatrix}
+    3 & 3 \\
+    4 & 5
+    \end{vmatrix} = 3 \cdot 5 - 3 \cdot 4 = 15 - 12 = 3
+    \]
+
+    Le déterminant étant non nul, les droites (L) et (D) ne sont pas parallèles et donc sont sécantes.
+
+    Trouvons le point d'intersection en résolvant le système :
+    \[
+    \begin{cases}
+    -4x + 3y + 1 = 0 \\
+    5x - 3y = 16
+    \end{cases}
+    \]
+
+    En ajoutant les deux équations :
+    \[
+    -4x + 3y + 1 + 5x - 3y = 16
+    \]
+    \[
+    x = 15
+    \]
+
+    En substituant \(x = 15\) dans \(5x - 3y = 16\) :
+    \[
+    5 \cdot 15 - 3y = 16
+    \]
+    \[
+    75 - 3y = 16
+    \]
+    \[
+    -3y = 16 - 75
+    \]
+    \[
+    -3y = -59
+    \]
+    \[
+    y = \frac{59}{3}
+    \]
+
+    Le point d'intersection est \((15, \frac{59}{3})\).
+\end{enumerate}
+
+\begin{tikzpicture}
+    \begin{axis}[
+        axis lines = middle,
+        xlabel = $x$,
+        ylabel = $y$,
+        grid = both,
+        xmin=-5, xmax=5,
+        ymin=-5, ymax=5,
+    ]
+    % Draw line L: -4x + 3y + 1 = 0
+    \addplot[domain=-5:5, samples=2, color=blue]{(4*x - 1)/3};
+    \node at (axis cs:2,-3) [anchor=west] {A(2,-3)};
+    \node at (axis cs:1,1) [anchor=west] {B(1,1)};
+    \node at (axis cs:-2,-3) [anchor=west] {C(-2,-3)};
+    % Draw line D: 5x - 3y = 16
+    \addplot[domain=-5:5, samples=2, color=red]{(5/3)*x - 16/3};
+    \node at (axis cs:-1,-7) [anchor=west] {E(-1,-7)};
+    \end{axis}
+\end{tikzpicture}
+\section*{EXERCICE 4 (4,5 points)}
+On donne les droites (D1), (D2) et (D3) d’équations respectives :
+
+\( x - y + 1 =0\) ,  \(x + y + 9 = 0\) et  	 \(4x - y - 14 = 0\)
+
+    Ces droites forment un triangle ABC. 
+    
+    1) Calculer les coordonnées des points A , B et C. \textbf{(0,5 pt $\times$ 2)}
+    
+    2) Trouver l’équation de la droite (L) parallèle à (D1) et passant par C.\textbf{(1,5 pt)}
+    
+    3) Trouver l’équation de la droite (L’) perpendiculaire à (D2) passant par B.\textbf{(1,5 pt)}
+\section*{\textcolor{red}{\underline{Correction Exercice 4} (4,5 points) :}}
+
+On donne les droites (\(D1\)), (\(D2\)) et (\(D3\)) d’équations respectives :
+
+\[ x - y + 1 = 0, \quad x + y + 9 = 0, \quad 4x - y - 14 = 0 \]
+
+Ces droites forment un triangle ABC. 
+
+\begin{enumerate}
+    \item Calculer les coordonnées des points \(A\), \(B\) et \(C\). \textbf{(0,5 pt $\times$ 3)}
+    
+    Les coordonnées de \(A\) sont l'intersection des droites \(D1\) et \(D2\). En résolvant le système :
+    \[
+    \begin{cases}
+    x - y + 1 = 0 \\
+    x + y + 9 = 0
+    \end{cases}
+    \]
+    On trouve \(A(-1, 0)\).
+    
+    Les coordonnées de \(B\) sont l'intersection des droites \(D2\) et \(D3\). En résolvant le système :
+    \[
+    \begin{cases}
+    x + y + 9 = 0 \\
+    4x - y - 14 = 0
+    \end{cases}
+    \]
+    On trouve \(B(-9, 0)\).
+    
+    Les coordonnées de \(C\) sont l'intersection des droites \(D1\) et \(D3\). En résolvant le système :
+    \[
+    \begin{cases}
+    x - y + 1 = 0 \\
+    4x - y - 14 = 0
+    \end{cases}
+    \]
+    On trouve \(C\left(\frac{7}{2}, 0\right)\).
+    
+    \item Trouver l’équation de la droite \(L\) parallèle à \(D1\) et passant par \(C\). \textbf{(1,5 pt)}
+    
+    L'équation de \(L\) est de la forme \(x - y + k = 0\). En substituant les coordonnées de \(C\), on obtient \(k = -\frac{7}{2}\). Donc, l'équation de \(L\) est \(x - y - \frac{7}{2} = 0\).
+    
+    \item Trouver l’équation de la droite \(L'\) perpendiculaire à \(D2\) passant par \(B\). \textbf{(1,5 pt)}
+    
+    L'équation de \(L'\) est de la forme \(x + y + k = 0\). En substituant les coordonnées de \(B\), on obtient \(k = 9\). Donc, l'équation de \(L'\) est \(x + y + 9 = 0\).
+\end{enumerate}
+
+\end{document}
