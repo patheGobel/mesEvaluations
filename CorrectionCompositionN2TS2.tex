@@ -60,6 +60,45 @@ On considère les intégrales suivantes : $I_{0}=\int_{0}^{\frac{\pi}{3}} \frac{
 
 \section*{\textcolor{green}{\underline{Correction Exercice 1} (4 points) :}}
 
+\begin{enumerate}
+    \item On calcule $I_{0}$ :
+    \[
+    I_{0}=\int_{0}^{\frac{\pi}{3}} \frac{dx}{\cos(x)} = \int_{0}^{\frac{\pi}{3}} \sec(x) \, dx = \left[ \ln(\tan\left(\frac{x}{2}+\frac{\pi}{4}\right)) \right]_{0}^{\frac{\pi}{3}} = \ln(\sqrt{3} + 1)
+    \]
+    Pour $J_n$, en utilisant l'intégration par parties :
+    \[
+    J_{n} = \int_{0}^{\frac{\pi}{3}} \frac{\sin^n(x)}{\cos(x)}dx = \int_{0}^{\frac{\pi}{3}} \sin^n(x) \sec(x) \, dx
+    \]
+    On en déduit que :
+    \[
+    I_{n+2} - I_{n} = \int_{0}^{\frac{\pi}{3}} (\sin^{n+2}(x) - \sin^n(x)) \sec(x) \, dx
+    \]
+    \item Calculons $I_{1}$, $I_{3}$ et $I_{5}$ :
+    \[
+    I_{1} = \int_{0}^{\frac{\pi}{3}} \sin(x) \, dx = \left[ -\cos(x) \right]_{0}^{\frac{\pi}{3}} = 1 - \frac{1}{2} = \frac{1}{2}
+    \]
+    Pour $I_{3}$ et $I_{5}$, en utilisant des relations de récurrence similaires :
+    \[
+    I_{3} = \int_{0}^{\frac{\pi}{3}} \sin^3(x) \sec(x) \, dx
+    \]
+    \[
+    I_{5} = \int_{0}^{\frac{\pi}{3}} \sin^5(x) \sec(x) \, dx
+    \]
+    \item 
+    \begin{enumerate}
+        \item La fonction $f(x) = \ln\left( \tan\left(\frac{x}{2}+\frac{\pi}{4}\right)\right)$ est une primitive de $g(x) = \frac{1}{\cos(x)}$ :
+        \[
+        f'(x) = \frac{1}{\tan\left(\frac{x}{2}+\frac{\pi}{4}\right)} \cdot \sec^2\left(\frac{x}{2}+\frac{\pi}{4}\right) \cdot \frac{1}{2} = \frac{1}{\cos(x)}
+        \]
+        \item En déduire $I_{0}$ et $I_{2}$ :
+        \[
+        I_{0} = \ln\left( \tan\left(\frac{\pi}{6}+\frac{\pi}{4}\right) \right) = \ln\left( \sqrt{3} + 1 \right)
+        \]
+        \[
+        I_{2} = \int_{0}^{\frac{\pi}{3}} \sin^2(x) \sec(x) \, dx = \frac{1}{2} \int_{0}^{\frac{\pi}{3}} (1 - \cos(2x)) \sec(x) \, dx = \frac{1}{2} \left( I_{0} - \int_{0}^{\frac{\pi}{3}} \cos(2x) \sec(x) \, dx \right)
+        \]
+    \end{enumerate}
+\end{enumerate}
 \section*{\textcolor{green}{\underline{Correction Exercice 3} (6 points) :}}
 
 \section*{\textcolor{green}{\underline{Correction du Problème} (10 points) :}}
