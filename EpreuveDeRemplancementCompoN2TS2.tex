@@ -1,0 +1,152 @@
+\documentclass[12pt]{article}
+\usepackage{stmaryrd}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\usepackage{verbatim}
+
+\usepackage{color, soul}
+
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tkz-tab}
+
+\usepackage{tikz}
+\usetikzlibrary{arrows, shapes.geometric, fit}
+
+
+\usepackage[margin=2cm]{geometry}
+
+\begin{document}
+
+\begin{minipage}{0.5\textwidth}
+	Ministère de l'éducation nationale  \\
+	Inspection académique de Kédougou   \\
+	Lycée de Dindéferlo            \\
+	Cellule de mathématiques            \\
+	M. BA                          \\
+	Classe : TS  \\
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+	Année scolaire 2023-2024 \\
+	Date : 10-06-2024 \\
+	Durée : 4h 00 \\
+\end{minipage}
+
+\begin{center}
+	\textbf{{\underline{\textcolor{red}{Composition Du Second Semestre}}}}
+\end{center}
+
+\section*{\textcolor{red}{\underline{Exercice 1} (4 points) :}}
+Le plan complexe est muni d’un repère orthonormé $(O,\vec{u},\vec{v})$
+On considère les points A et B d’affixes respectives a et b tels que
+
+$a=-(\frac{1+\sqrt{3}}{2})(1-i)$ et $b=-(\frac{1+\sqrt{3}}{2})(1+i)$ 
+
+1) Ecrire a et b sous forme trigonométrique.\textbf{1pt}
+
+2) Quelle est la nature du triangle OAB ?\textbf{1pt}
+
+3) On désigne par C le point d’affixe 1.
+
+a) Ecrire le nombre complexe $\frac{1-a}{b-a}$  sous forme trigonométrique.\textbf{1pt}
+
+b) En déduire la nature du triangle ABC et  utiliser ce résultat pour placer les points A, B, C sur la figure.\textbf{1pt}
+\section*{\textcolor{red}{\underline{Exercice 2} (6 points) :}}
+\subsection*{Partie A: (2pts)}
+Une urne contient trois boules jaunes, cinq boules rouges et deux boules vertes.
+
+1) On tire simultanément trois boules de l'urne.
+
+a) Quel est le nombre de tirages unicolores ? \textbf{0,5pt}
+
+b)Quel est le nombre de tirages comportant exactement deux boules de même couleur ? \textbf{0,5pt}
+
+2) On tire successivement sans remise trois boules.
+
+a) Quel est le nombre de tirages comportant des boules rouges uniquement ? \textbf{0,5pt}
+
+b)Quel est le nombre de tirages ne comportant pas de boule verte aux deuxième tirage ?\textbf{0,5pt}
+\subsection*{Partie B: (4pts)}
+Un porte-monnaie contient quatre pièce de \textbf{500F} et une pièce de \textbf{200F}.
+
+Un enfant tire au hasard 3 pièces de ce porte-monnaie.
+
+1)Calculer la probabilité de l'évènement A : << tiré 3 pièce de \textbf{500F} >>.\textbf{0,5pt}
+
+2)Soit X la variable aléatoire égale au nombre de pièce de \textbf{500F} figurant parmis les 3 pièces tirées.
+
+Déterminer la loi de probabilité de X puis représenter la fonction de répartition de X.\textbf{1pt+1pt}
+
+3)Calculer l'espérance mathématique et l'écart-type. \textbf{0,5pt+0,5pt}
+
+4)L'enfant rèpète 5 fois l'expérience A en remettant à chaque fois les trois pièces tirées.
+
+Quelle est la probabilité que l'évenement A se réalise tois fois a l'issu des 5 tirages ? \textbf{0,5pt}
+
+L'enfant efectue n fois cette épreuve. Détermine la plus petite valeur de n pour que la probabilité d'obtenir au moins une fois l'évènement A soit supérieur à 0,99. \textbf{1pt}
+
+\section*{\textcolor{red}{\underline{Problème} (10 points) :}}
+\subsection*{\underline{Partie A:} (2 pts)}
+On considère l'équation différentielle \textbf{(E)} : $\frac{1}{2}y' + y = 3e^{-2x} + 2$
+
+\begin{itemize}
+    \item[1.] Déterminer \textbf{a} pour que la fonction $v$ définie par $v(x) = \textbf{a}xe^{-2x} + 2$ soit une solution de l'équation \textbf{(E')}. \textbf{0,5 pt}
+    \item[2.] Donner les solutions de l'équation \textbf{(E')} : $\frac{1}{2}y' + y = 0$. \textbf{0,5 pt}
+    \item[3.] 
+    \begin{itemize}
+        \item[a)] Montrer que $u$ est une solution de \textbf{(E)} si et seulement si $v - u$ est solution de \textbf{(E')}. \textbf{0,5 pt}
+        \item[b)] En déduire les solutions de \textbf{(E)}. \textbf{0,25 pt}
+    \end{itemize}
+    \item[4.] Déterminer la solution $u$ de l'équation \textbf{(E)} vérifiant $u(0) = 0$. \textbf{0,25 pt}
+\end{itemize}
+\subsection*{\underline{Partie B:} (8 pts)}
+On définit la fonction $f$ sur $\mathbb{R}$ par :
+\[
+f(x) = \begin{cases} 
+  2(3x - 1)e^{-2x} + 2, & \text{si } x \leq 0 \\
+  \frac{x\ln x}{1 + x}, & \text{si } x > 0 
+\end{cases}
+\]
+On note $C_{f}$ sa courbe représentative dans un repère d'unité graphique 4 cm.
+
+\begin{itemize}
+    \item[I.] On définit la fonction $g$ sur $\left]0 ; \infty\right[$ par $g(x) = 1 + x + \ln(x)$
+    \begin{itemize}
+        \item[1.] 
+        \begin{itemize}
+            \item[a)] Calculer les limites de $g$ en 0 et en $+\infty$. \textbf{0,25 pt + 0,25 pt}
+            \item[b)] Étudier le sens de variation de $g$. \textbf{0,5 pt}
+            \item[c)] Dresser le tableau de variation de $g$. \textbf{0,5 pt}
+        \end{itemize}
+        \item[2.] Montrer que l'équation $g(x) = 0$ admet une unique solution $\alpha$ dans $\left]0 ; \infty\right[$. En déduire que $\alpha \in \left]0,2 ; 0,3\right[$. \textbf{0,5 pt}
+        \item[3.] Déduire le signe de $g(x)$ suivant les valeurs de $x$ sur $\left]0 ; \infty\right[$. \textbf{0,25 pt}
+    \end{itemize}
+    \item[II.] Étude de la fonction $f$
+    \begin{itemize}
+        \item[1.] Étudier la continuité et la dérivabilité de $f$ en 0 puis interpréter graphiquement les résultats. \textbf{1 pt}
+        \item[2.] Étudier les limites de $f$ en $+\infty$ et en $-\infty$. \textbf{0,25 pt + 0,25 pt}
+        \item[3.] Étudier les branches infinies en l'infini. \textbf{0,5 pt + 0,5 pt}
+        \item[4.] Étudier le sens de variation de $f$ sur $\mathbb{R}$ (on montrera que pour tout $x > 0$, $f'(x) = \frac{g(x)}{(x + 1)^{2}}$). \textbf{0,5 pt}
+        \item[5.] Dresser le tableau de variation de $f$. \textbf{0,5 pt}
+        \item[6.] Montrer que $f(\alpha) = -\alpha$ puis déterminer l'intersection de $C_f$ avec les axes. \textbf{0,5 pt}
+        \item[7.] Tracer $C_f$. \textbf{0,75 pt}
+    \end{itemize}
+\end{itemize}
+\section*{\underline{Partie C:}}
+Soit $\beta < 0$, on note $A(\beta)$ l'aire de la partie du plan délimitée par les droites d'équations $x = \beta$, $x = 0$, $y = 0$ et la courbe $C_f$.
+
+\begin{itemize}
+    \item[1.] On pose $F(x) = (ax + b)e^{-2x}$. Déterminer $a$ et $b$ pour que $F'(x) = (3x - 1)e^{-2x}$. \textbf{0,5 pt}
+    \item[2.] Calculer $A(\beta)$. \textbf{0,5 pt}
+    \item[3.] Calculer sa limite en $-\infty$. \textbf{0,25 pt}
+\end{itemize}
+\end{document}
