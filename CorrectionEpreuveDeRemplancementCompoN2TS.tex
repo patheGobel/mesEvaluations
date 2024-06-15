@@ -135,6 +135,117 @@ Déterminer la loi de probabilité de X puis représenter la fonction de répart
 Quelle est la probabilité que l'évenement A se réalise tois fois a l'issu des 5 tirages ? \textbf{0,5pt}
 
 L'enfant efectue n fois cette épreuve. Détermine la plus petite valeur de n pour que la probabilité d'obtenir au moins une fois l'évènement A soit supérieur à 0,99. \textbf{1pt}
+\section*{\textcolor{green}{\underline{Correction Exercice 2} (6 points) :}}
+\subsection*{Partie A: (2pts)}
+
+\subsection*{1) On tire simultanément trois boules de l'urne.}
+
+\subsubsection*{a) Le nombre de tirages unicolores : \textbf{0,5 pt}}
+
+Pour qu'un tirage soit unicolore, les trois boules tirées doivent être de la même couleur.
+
+- Nombre de façons de tirer 3 boules jaunes (il n'y a que 3 boules jaunes) :
+  \[
+  C_{3}^{3} = 1
+  \]
+
+- Nombre de façons de tirer 3 boules rouges parmi 5 boules rouges :
+  \[
+  C_{5}^{3} = \frac{5!}{3!(5-3)!} = 10
+  \]
+
+- Nombre de façons de tirer 3 boules vertes (il n'y a que 2 boules vertes) :
+  \[
+  C_{2}^{3} = 0
+  \]
+
+Ainsi, le nombre total de tirages unicolores est :
+\[
+1 + 10 + 0 = 11
+\]
+\textbf{\color{green}{Autrement dit :}}
+
+Soit A:<<Tirer 3 boules jaunes parmis les jaunes, tirer 3 boules rouges parmis les rouges et tirer 3 boules vertes par les vertes>>
+
+\[\text{Donc, }\color{green}{\boxed{\text{card(A)=}  C_{3}^{3} + C_{5}^{3} + C_{2}^{3}=11}}\]
+\subsubsection*{b) Le nombre de tirages comportant exactement deux boules de même couleur : \textbf{0,5 pt}}
+
+Pour qu'un tirage comporte exactement deux boules de même couleur, nous devons considérer les différentes combinaisons possibles de deux boules de même couleur et une boule d'une autre couleur.
+
+- **Deux boules jaunes et une autre boule** :
+
+  - Nombre de façons de tirer 2 boules jaunes parmi 3 boules jaunes :
+    \[
+    \binom{3}{2} = 3
+    \]
+  - Nombre de façons de tirer 1 boule parmi les 7 autres boules (5 rouges et 2 vertes) :
+    \[
+    \binom{7}{1} = 7
+    \]
+  - Total pour cette combinaison :
+    \[
+    3 \times 7 = 21
+    \]
+
+- **Deux boules rouges et une autre boule** :
+
+  - Nombre de façons de tirer 2 boules rouges parmi 5 boules rouges :
+    \[
+    \binom{5}{2} = 10
+    \]
+  - Nombre de façons de tirer 1 boule parmi les 5 autres boules (3 jaunes et 2 vertes) :
+    \[
+    \binom{5}{1} = 5
+    \]
+  - Total pour cette combinaison :
+    \[
+    10 \times 5 = 50
+    \]
+
+- **Deux boules vertes et une autre boule** :
+
+  - Nombre de façons de tirer 2 boules vertes parmi 2 boules vertes :
+    \[
+    \binom{2}{2} = 1
+    \]
+  - Nombre de façons de tirer 1 boule parmi les 8 autres boules (3 jaunes et 5 rouges) :
+    \[
+    \binom{8}{1} = 8
+    \]
+  - Total pour cette combinaison :
+    \[
+    1 \times 8 = 8
+    \]
+
+Ainsi, le nombre total de tirages comportant exactement deux boules de même couleur est :
+\[
+21 + 50 + 8 = 79
+\]
+\textbf{\color{green}{Autrement dit :}}
+
+Soit $B$ : << Deux boules jaunes et une autre boule, ou deux boules rouges et une autre boule, ou deux boules vertes et une autre boule >>.
+
+\[\text{card(B)=}C_{3}^{2}\times C_{7}^{1} + C_{5}^{2}\times C_{5}^{1} + C_{2}^{2}\times C_{8}^{1}\]
+\[\text{card(B)=}\frac{3!}{(3-2)!2!}\times 7 +\frac{5!}{(5-2)!2!}\times 5 + \frac{2!}{(2-2)!2!}\times 8\]
+\[\text{Donc, }\color{green}{\boxed{\text{card(A)=}3\times 7 +10\times 5 + 1\times 8=79}}\]
+
+\subsection*{2) On tire successivement sans remise trois boules.}
+
+\subsubsection*{a) Le nombre de tirages comportant des boules rouges uniquement :}
+
+Pour que les trois boules tirées soient rouges, nous devons choisir 3 boules rouges parmi les 5 disponibles. Comme l'ordre de tirage est important, nous devons calculer les arrangements de 5 objets pris 3 à 3 :
+
+\[
+A_{5}^{3} = \frac{5!}{(5-3)!} = 5 \times 4 \times 3 = 60
+\]
+
+Ainsi, le nombre de tirages comportant uniquement des boules rouges est de 60.
+
+\textbf{\color{green}{Autrement dit :}}
+
+Soit $C$ : << Deux boules jaunes et une autre boule, ou deux boules rouges et une autre boule, ou deux boules vertes et une autre boule >>.
+\[\text{card(C)=}A_{5}^{3} = \frac{5!}{(5-3)!} = 5 \times 4 \times 3 = 60\]
+\[\text{Donc, }\color{green}{\boxed{\text{card(C)=}60}}\]
 
 \section*{\textcolor{red}{\underline{Problème} (10 points) :}}
 \subsection*{\underline{Partie A:} (2 pts)}
@@ -191,4 +302,5 @@ Soit $\beta < 0$, on note $A(\beta)$ l'aire de la partie du plan délimitée par
     \item[2.] Calculer $A(\beta)$. \textbf{0,5 pt}
     \item[3.] Calculer sa limite en $-\infty$. \textbf{0,25 pt}
 \end{itemize}
+\section*{\textcolor{green}{\underline{Correction Problème} (10 points) :}}
 \end{document}
