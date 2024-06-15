@@ -300,6 +300,90 @@ Un enfant tire au hasard 3 pièces de ce porte-monnaie.
 \[p(A)=\frac{card(A)}{card(\Omega)}=\frac{4}{5}\]
 
 \[\text{Donc, }\color{green}{\boxed{\text{p(A)=}\frac{4}{5}}}\]
+2)Soit X la variable aléatoire égale au nombre de pièce de \textbf{500F} figurant parmis les 3 pièces tirées.
+
+Déterminons la loi de probabilité de X puis représentons la fonction de répartition de X.\textbf{1pt+1pt}
+
+Pour ce faire, représentons l'arbe de probabilité :
+ 
+Soit C << Tirer une piéce de \textbf{500F}>>
+
+Soit D << Tirer une piéce de \textbf{200F}>>
+
+\begin{tikzpicture}[level distance=3cm,
+  level 1/.style={sibling distance=5cm},%Ecarte les branches des 1eme ramifications
+  level 2/.style={sibling distance=2cm},%Ecarte les branches des  2eme ramifications
+  level 3/.style={sibling distance=1cm}]%Ecarte les branches des 3eme ramifications
+    every node/.style={text width=2cm, align=center}]%Permet de spécifier une largeur pour chaque nœud
+  \node {}
+    child {node {$C$}
+     child {node {$C$}
+     	child {node {$C$}    
+      	} 
+      	child {node {$D$}    
+      	}   
+      }
+      child {node {$D$}
+      	child {node {$C$}    
+      	} 
+      	child {node {$C$}    
+      	}     
+      }
+    }% Les 2ème ramification a gauche     
+    child {node {$D$}  
+         child {node {$C$}
+              	child {node {$C$}    
+      			} 
+      			child {node {$C$}    
+      			}    
+      		}
+      child {node {$C$} 
+           	child {node {$C$}    
+      	} 
+      	child {node {$C$}    
+      	}   
+      }  
+    };% Les 2ème ramification a drote
+    
+%\node at (-3,-1.5) [right] {$p(\overline{A})$};
+%\node at (0.8,-1.5) [right] {$p(A)$};
+
+%\node at (-5,-4) [right] {$p_{\overline{A}}(\overline{B})$};
+%\node at (-2.2,-4) [right] {$p_{\overline{A}}(B)$};
+
+%\node at (-0.1,-4) [right] {$p_{A}(\overline{B})$};
+%\node at (2.8,-4) [right] {$p_{A}(B)$};
+\end{tikzpicture}
+
+Soit E l’ensemble des issues possibles donc:
+
+$E=\left\lbrace CCC;CCD;CDC;CDC;DCC;DCC;DCC;DCC \right\rbrace $
+
+$X=\left\lbrace 3;2;2;2;2;2;2;2  \right\rbrace $
+
+\textbf{\textcolor{red}{Variable aléatoire}} X donnant le nombre de pièce de 500F pour chaque éventualité de E.
+
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+\hline
+Eventualité de E & $CCC$ & $CCD$ & $CDC$&$CDC$&$DCC$&$DCC$&$DCC$&$DCC$\\
+\hline
+Valeurs prises par X &$3$ &$2$&$2$&$2$&$2$&$2$&$2$&$2$ \\
+\hline
+\end{tabular}\\
+D'où:$X(E) = \left\lbrace 3 ; 2 \right\rbrace $\\
+
+\textbf{Probabilité sur l'univers $X(E)$ au loi de probabilité de la variable aléatoire X}
+
+$p_{1}=P(X=3)=\frac{1}{8}$ ; $p_{2}=P(X=2)=\frac{7}{8}$
+
+\begin{tabular}{|c|c|c|}
+\hline
+$x_{i}$ & $X_{1}=3$ & $X_{2}=2$\\
+\hline
+$p_{i} = p(X = x_{i}) $ &$\frac{1}{8}$ &$\frac{7}{8}$ \\
+\hline
+\end{tabular}
+
 
 \section*{\textcolor{red}{\underline{Problème} (10 points) :}}
 \subsection*{\underline{Partie A:} (2 pts)}
