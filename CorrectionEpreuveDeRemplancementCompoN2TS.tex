@@ -176,11 +176,11 @@ Pour qu'un tirage comporte exactement deux boules de même couleur, nous devons 
 
   - Nombre de façons de tirer 2 boules jaunes parmi 3 boules jaunes :
     \[
-    \binom{3}{2} = 3
+    C_{3}^{2} = 3
     \]
   - Nombre de façons de tirer 1 boule parmi les 7 autres boules (5 rouges et 2 vertes) :
     \[
-    \binom{7}{1} = 7
+    C_{7}^{1} = 7
     \]
   - Total pour cette combinaison :
     \[
@@ -191,11 +191,11 @@ Pour qu'un tirage comporte exactement deux boules de même couleur, nous devons 
 
   - Nombre de façons de tirer 2 boules rouges parmi 5 boules rouges :
     \[
-    \binom{5}{2} = 10
+    C_{5}^{2} = 10
     \]
   - Nombre de façons de tirer 1 boule parmi les 5 autres boules (3 jaunes et 2 vertes) :
     \[
-    \binom{5}{1} = 5
+    C_{5}^{1} = 5
     \]
   - Total pour cette combinaison :
     \[
@@ -206,11 +206,11 @@ Pour qu'un tirage comporte exactement deux boules de même couleur, nous devons 
 
   - Nombre de façons de tirer 2 boules vertes parmi 2 boules vertes :
     \[
-    \binom{2}{2} = 1
+    C_{2}^{2} = 1
     \]
   - Nombre de façons de tirer 1 boule parmi les 8 autres boules (3 jaunes et 5 rouges) :
     \[
-    \binom{8}{1} = 8
+    C_{8}^{1} = 8
     \]
   - Total pour cette combinaison :
     \[
@@ -349,6 +349,69 @@ $p_{i} = p(X = x_{i}) $ &$\frac{3}{5}$ &$\frac{2}{5}$ \\
 \hline
 \end{tabular}
 
+
+\begin{equation*}
+F(x)=\begin{cases}
+0 & \text{si } x < x_{1}\\
+p_{1} & \text{si } x_{1} \leq x < x_{2}\\
+p_{1} + p_{2} & \text{si } x_{2} \leq x < x_{3}\\
+\vdots \\
+p_{1} + p_{2} + p_{3} + \ldots + p_{k} & \text{si } x_{k} \leq x < x_{k+1}\\
+\vdots \\
+p_{1} + p_{2} + p_{3} + \ldots + p_{n-1} & \text{si } x_{n-1} \leq x < x_{n}\\
+1 & \text{si } x \geq x_{n}
+\end{cases}
+\end{equation*}
+
+En considérant ce tableau 
+
+\begin{tabular}{|c|c|c|}
+\hline
+$x_{i}$ & $x_{1}=2$ & $x_{2}=3$\\
+\hline
+$p_{i} = p(X = x_{i}) $ &$\frac{3}{5}$ &$\frac{2}{5}$ \\
+\hline
+\end{tabular}
+
+Ce qui entraine
+
+\begin{equation*}
+F(x)=\begin{cases}
+0 & \text{si } x < 2\\
+\frac{3}{5} & \text{si } 2 \leq x < 3\\
+1 & \text{si } x \geq 3
+\end{cases}
+\end{equation*}
+
+\definecolor{ududff}{rgb}{0.30196078431372547,0.30196078431372547,1}
+\definecolor{xdxdff}{rgb}{0.49019607843137253,0.49019607843137253,1}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+\begin{axis}[
+x=1cm,y=1cm,
+axis lines=middle,
+ymajorgrids=true,
+xmajorgrids=true,
+xmin=-4,
+xmax=10,
+ymin=-0.1,
+ymax=3,
+xtick={-8,-7,...,11},
+ytick={-3,-2,-1,0,1,2,3,4,5},]
+\clip(-8.58,-3.13) rectangle (11.22,5.13);
+\draw [line width=2pt] (-9,0)-- (2,0);
+\draw [line width=2pt] (2,0.6)-- (3,0.6);
+\draw [line width=2pt] (3,1)-- (11,1);
+\begin{scriptsize}
+\draw [fill=xdxdff] (2,0) circle (2.5pt);
+\draw[color=xdxdff] (-0.2,0.6) node {$\frac{3}{2}$};
+\draw [fill=xdxdff] (2,0.6) circle (2.5pt);
+\draw [fill=ududff] (3,1) circle (2.5pt);
+\end{scriptsize}
+\end{axis}
+\end{tikzpicture}
+
+--------------------------------------------------------------------------------------------------------------
+
 3)Calculons l'espérance mathématique et l'écart-type. \textbf{0,5pt+0,5pt}
 \begin{itemize}
 \item \underline{Espérance}
@@ -364,6 +427,8 @@ $p_{i} = p(X = x_{i}) $ &$\frac{3}{5}$ &$\frac{2}{5}$ \\
 \text{Donc, }\color{green}{\boxed{\sigma = \sqrt{\text{V(X)}} = \sqrt{0.24} \approx 0.49}}
 \]
 \end{itemize}
+
+--------------------------------------------------------------------------------------------------------------
 
 4)L'enfant rèpète 5 fois l'expérience A en remettant à chaque fois les trois pièces tirées.
 
