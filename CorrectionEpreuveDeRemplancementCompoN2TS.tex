@@ -353,12 +353,16 @@ $p_{i} = p(X = x_{i}) $ &$\frac{3}{5}$ &$\frac{2}{5}$ \\
 \begin{itemize}
 \item \underline{Espérance}
 \[E(X)=\sum_{i=1}^{n}(p_{i}x_{i})\]
-\[E(X)=\sum_{i=1}^{2}(p_{i}x_{i})=3\times \frac{1}{8}+2\times \frac{7}{8}=\frac{17}{8}\]
-\[\text{Donc, }\color{green}{\boxed{\text{E(X)=}\frac{17}{8}}}\]
-\item \underline{Ecart-type}
-\[V(X)=\sum_{i=1}^{n}p_{i}(x_{i}-E(X))^{2}=\sum_{i=1}^{n}p_{i}x_{i}^{2}-E(X)^{2}\]
-\[V(X)=\frac{1}{8}\left( 3-\frac{17}{8}\right)^{2}+\frac{7}{8}\left( 2-\frac{17}{8}\right) ^{2}\]
-\[\text{Donc, }\color{green}{\boxed{\text{E(X)=}\frac{7}{64}}}\]
+\[E(X)=\sum_{i=1}^{2}(p_{i}x_{i})=2\times \frac{3}{5}+3\times \frac{2}{5}=\frac{12}{5}\]
+\[\text{Donc, }\color{green}{\boxed{\text{E(X)=}\frac{12}{5}}}\]
+\item \underline{Ecart-type $\sigma$}
+\[V(X)=\sum_{i=1}^{n}p_{i}(x_{i}-E(X))^{2}=\left( \sum_{i=1}^{n}p_{i}x_{i}^{2}\right) -E(X)^{2}\]
+\[V(X)=\frac{3}{5}\left( 2-\frac{12}{5}\right)^{2}+\frac{2}{5}\left( 3-\frac{12}{5}\right)^{2}\]
+\[V(X)=\frac{5}{12}\]
+\[\text{Donc, }\color{green}{\boxed{\text{E(X)=}\frac{5}{12}}}\]
+\[
+\text{Donc, }\color{green}{\boxed{\sigma = \sqrt{\text{V(X)}} = \sqrt{0.24} \approx 0.49}}
+\]
 \end{itemize}
 
 4)L'enfant rèpète 5 fois l'expérience A en remettant à chaque fois les trois pièces tirées.
