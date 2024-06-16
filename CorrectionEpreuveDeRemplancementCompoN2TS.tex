@@ -295,11 +295,19 @@ Un enfant tire au hasard 3 pièces de ce porte-monnaie.
 
 1)Calculons la probabilité de l'évènement A : << tiré 3 pièce de \textbf{500F} >>.\textbf{0,5pt}
 
-\[card(A)=4 \text{ et } card(\Omega)=5\]
-
-\[p(A)=\frac{card(A)}{card(\Omega)}=\frac{4}{5}\]
-
-\[\text{Donc, }\color{green}{\boxed{\text{p(A)=}\frac{4}{5}}}\]
+Le nombre total de façons de tirer 3 pièces parmi 5:
+\[
+C_{5}^{3} = \frac{5!}{3!(5-3)!} = 10
+\]
+Le nombre de façons de tirer 3 pièces de 500 F parmi 4:
+\[
+C_{4}^{3} = \frac{4!}{3!(4-3)!} = 4
+\]
+La probabilité de l'événement A est donc:
+\[
+P(A) = \frac{4}{10} = \frac{2}{5}
+\]
+\[\color{green}{\boxed{\text{P(A)=}\frac{4}{10} = \frac{2}{5}}}\]
 2)Soit X la variable aléatoire égale au nombre de pièce de \textbf{500F} figurant parmis les 3 pièces tirées.
 
 Déterminons la loi de probabilité de X puis représentons la fonction de répartition de X.\textbf{1pt+1pt}
@@ -398,9 +406,17 @@ $p_{i} = p(X = x_{i}) $ &$\frac{1}{8}$ &$\frac{7}{8}$ \\
 
 4)L'enfant rèpète 5 fois l'expérience A en remettant à chaque fois les trois pièces tirées.
 
-Quelle est la probabilité que l'évenement A se réalise tois fois a l'issu des 5 tirages ? \textbf{0,5pt}
+La probabilité que l'évenement A se réalise tois fois à l'issu des 5 tirages: \textbf{0,5pt}
 
-L'enfant efectue n fois cette épreuve. Détermine la plus petite valeur de n pour que la probabilité d'obtenir au moins une fois l'évènement A soit supérieur à 0,99. \textbf{1pt}
+On a une epreuve de Bernoulli
+
+\[P(X=k)=C_{n}^{k}\times p^{k}\times (1-p)^{n-k} \text{avec} (0\leq k\leq n)\] 
+\[P(X=3)=C_{5}^{3}\times \left( \frac{1}{8}\right )^{3}\times (\frac{7}{8})^{5-3}\]
+\[P(X=3)=C_{5}^{3}\times \left( \frac{1}{8}\right )^{3}\times \left( \frac{7}{8} \right)^{5-3}\]
+\[\text{Donc, }\color{green}{\boxed{\text{E(X)=}0,015}}\]
+L'enfant efectue n fois cette épreuve. Déterminons la plus petite valeur de n pour que la probabilité d'obtenir au moins une fois l'évènement A soit supérieur à 0,99. \textbf{1pt}
+
+Soit E:"
 \section*{\textcolor{red}{\underline{Problème} (10 points) :}}
 \subsection*{\underline{Partie A:} (2 pts)}
 On considère l'équation différentielle \textbf{(E)} : $\frac{1}{2}y' + y = 3e^{-2x} + 2$
