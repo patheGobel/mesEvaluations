@@ -543,7 +543,7 @@ $v(x) = \textbf{a}xe^{-2x} + 2$  est solution ssi $\frac{1}{2}v(x)' + v(x) = 3e^
 \[\frac{1}{2}\textbf{a}e^{-2x}-xe^{-2x} + \textbf{a}xe^{-2x} + 2 = 3e^{-2x} + 2\]
 \[\frac{1}{2}\textbf{a}e^{-2x}+\left( -1 + \textbf{a}\right)xe^{-2x}  + 2 = 3e^{-2x} + 2\]
 \[\text{Par identification, }\frac{1}{2}\textbf{a}=3\]
-\[\text{Donc, }\textbf{a=6}\]
+\[\text{Donc, }\color{green}{\boxed{\textbf{a=6}}}\]
 
     \item[2.] Donnons les solutions de l'équation \textbf{(E')} : $\frac{1}{2}y' + y = 0$. \textbf{0,5 pt}
 \[\color{green}{\boxed{y(x)=Ke^{-\frac{1}{2}x}}}\]
@@ -551,7 +551,23 @@ $v(x) = \textbf{a}xe^{-2x} + 2$  est solution ssi $\frac{1}{2}v(x)' + v(x) = 3e^
     \begin{itemize}
         \item[a)] Montrons que $u$ est une solution de \textbf{(E)} si et seulement si $v - u$ est solution de \textbf{(E')}. \textbf{0,5 pt}
         
-        Supposons que $v - u$ est solution de \textbf{(E)} donc 
+        Comme c'est une équivalence, montrons les deux sens de l'implication.
+        \begin{itemize}
+        \item  \textbf{Supposons que $u$ est solution de \textbf{(E)} et montrons que $v - u$ est solution de \textbf{(E')}:}
+        \[\text{u est solution de \textbf{(E)} donc }\frac{1}{2}u'(x) + u(x) =3e^{-2x} + 2 \textbf{ (1)}\]
+        \[\text{Or v est solution de \textbf{(E)} donc }\frac{1}{2}v'(x)+v(x)= 3e^{-2x} + 2 \textbf{ (2)}\]
+        \[\text{En sommant membre à membre (1) et (2)}\]
+        \[\textbf{ (2)-(1)} \implies  \frac{1}{2}\left[ v'(x) - u'(x) \right]+\left[v(x) - u(x)\right]=0	\implies \frac{1}{2}\left[ v(x) - u(x) \right]'+\left[v(x) - u(x)\right]=0\]
+        Donc si u est une solution de \textbf{(E)} alors $v - u$ est une solution de \textbf{(E')}
+        \item  \textbf{Supposons que $v - u$ est solution de \textbf{(E')} et montrons que $u$ est solution de \textbf{(E)}:}
+        \[\text{v-u est solution de \textbf{(E')} donc }\frac{1}{2}\left[ v'(x) - u'(x) \right]+\left[v(x) - u(x)\right]=0\]
+        \[\frac{1}{2}u'(x) + u(x)=\frac{1}{2}v'(x) + v(x) \textbf{ (**) }\]
+                \[\text{Or v est solution de \textbf{(E)} donc }\frac{1}{2}v'(x)+v(x)= 3e^{-2x} + 2\]
+        \[\text{En remplaçant } \frac{1}{2}v'(x)+v(x) \text{ par son expression dans } \textbf{(**), } \frac{1}{2}u'(x) + u(x)=3e^{-2x} + 2\]
+        Donc si $v - u$ est une solution de \textbf{(E')} alors $u$ est une solution de \textbf{(E)}
+        \end{itemize}
+      
+
 %        \item[b)] En déduire les solutions de \textbf{(E)}. \textbf{0,25 pt}
     \end{itemize}
 %    \item[4.] Déterminer la solution $u$ de l'équation \textbf{(E)} vérifiant $u(0) = 0$. \textbf{0,25 pt}
