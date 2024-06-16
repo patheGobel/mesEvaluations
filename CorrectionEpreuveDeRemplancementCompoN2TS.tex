@@ -369,15 +369,46 @@ $p_{i} = p(X = x_{i}) $ &$\frac{3}{5}$ &$\frac{2}{5}$ \\
 
 La probabilité que l'évenement A se réalise tois fois à l'issu des 5 tirages: \textbf{0,5pt}
 
-On a une epreuve de Bernoulli
-
+C'est un problème de loi binomiale \(B(n = 5, p = \frac{2}{5})\) avec \(k = 3\).
 \[P(X=k)=C_{n}^{k}\times p^{k}\times (1-p)^{n-k} \text{avec} (0\leq k\leq n)\] 
-\[P(X=3)=C_{5}^{3}\times \left( \frac{1}{8}\right )^{3}\times (\frac{7}{8})^{5-3}\]
-\[P(X=3)=C_{5}^{3}\times \left( \frac{1}{8}\right )^{3}\times \left( \frac{7}{8} \right)^{5-3}\]
-\[\text{Donc, }\color{green}{\boxed{\text{E(X)=}0,015}}\]
-L'enfant efectue n fois cette épreuve. Déterminons la plus petite valeur de n pour que la probabilité d'obtenir au moins une fois l'évènement A soit supérieur à 0,99. \textbf{1pt}
 
-Soit E:"
+\[P(X=3)=C_{5}^{3}\times \left( \frac{2}{5}\right )^{3}\times \left( \frac{3}{5}\right) ^{2}\]
+
+\[
+P(X = 3) = 10 \times \frac{8}{125} \times \frac{9}{25} = 10 \times \frac{72}{3125} = \frac{720}{3125} = 0,23
+\]
+\[\text{Donc, }\color{green}{\boxed{\text{P(X = 3)=}0,23}}\]
+
+---------------------------------------------------------------------------------------------------------
+
+L'enfant effectue \(n\) fois cette épreuve. Déterminons la plus petite valeur de \(n\) pour que la probabilité d'obtenir au moins une fois l'événement A soit supérieure à 0,99. \textbf{1 pt}
+
+La probabilité de ne pas obtenir l'événement A en un tirage est:
+\[
+P(\overline{A})=1-P(A)=1 - \frac{2}{5} = \frac{3}{5}
+\]
+La probabilité de ne pas obtenir l'événement A en \(n\) tirages est:
+\[
+\left(\frac{3}{5}\right)^n
+\]
+Nous voulons que cette probabilité soit inférieure à 0,01:
+\[
+\left(\frac{3}{5}\right)^n < 0,01
+\]
+En prenant le logarithme:
+\[
+n \ln\left(\frac{3}{5}\right) < \ln(0,01)
+\]
+\[
+n > \frac{\ln(0,01)}{\ln\left(\frac{3}{5}\right)}
+\]
+\[
+n > \frac{\ln(0,01)}{\ln(3) - \ln(5)}
+\]
+\[
+n > \frac{-4.605}{-0.5108} \approx 9.02
+\]
+La plus petite valeur de \(n\) est donc 10.
 \section*{\textcolor{red}{\underline{Problème} (10 points) :}}
 \subsection*{\underline{Partie A:} (2 pts)}
 On considère l'équation différentielle \textbf{(E)} : $\frac{1}{2}y' + y = 3e^{-2x} + 2$
