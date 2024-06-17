@@ -689,10 +689,18 @@ On note $C_{f}$ sa courbe représentative dans un repère d'unité graphique 4 c
         	\lim_{x \to 0^{-}}-2\frac{e^{-2x}-1}{x}  
         	\end{cases}
         	\]
-        	\[\text{Or }\lim_{x \to 0^{-}}-2\frac{e^{-2x}-1}{x}=\lim_{X \to 0^{+}}-2\frac{e^{-X}-1}{-\frac{1}{2}X}=\lim_{X \to 0^{+}}4\frac{e^{-X}-1}{X}=-4\]
-        	\[\text{Donc, }\color{green}{\boxed{\lim_{x \to 0^{-}}\frac{f(x)-f(0)}{x}=-4}}\]
+        	\[
+        	\text{Posons }X=-2x \implies x=-\frac{1}{2}X:
+        	\begin{cases}
+        	\text{Si } {x \to 0^{-}}\\
+        	\text{alors } {X \to 0^{+}}
+        	\end{cases}
+        	\]
+        	\[\text{Or }\lim_{x \to 0^{-}}-2\frac{e^{-2x}-1}{x}=\lim_{X \to 0^{+}}-2\frac{e^{X}-1}{-\frac{1}{2}X}=\lim_{X \to 0^{+}}4\frac{e^{X}-1}{X}=4\]
+        	\[\text{Par somme, }\lim_{x \to 0^{-}}\frac{f(x)-f(0)}{x}=10\]
+        	\[\text{Donc, }\color{green}{\boxed{\lim_{x \to 0^{-}}\frac{f(x)-f(0)}{x}=10}}\]
         \end{itemize}
-        \item[2.] Étudier les limites de $f$ en $+\infty$ et en $-\infty$. \textbf{0,25 pt + 0,25 pt}
+       % \item[2.] Étudier les limites de $f$ en $+\infty$ et en $-\infty$. \textbf{0,25 pt + 0,25 pt}
         %\item[3.] Étudier les branches infinies en l'infini. \textbf{0,5 pt + 0,5 pt}
         %\item[4.] Étudier le sens de variation de $f$ sur $\mathbb{R}$ (on montrera que pour tout $x > 0$, $f'(x) = \frac{g(x)}{(x + 1)^{2}}$). \textbf{0,5 pt}
        % \item[5.] Dresser le tableau de variation de $f$. \textbf{0,5 pt}
