@@ -732,8 +732,20 @@ On note $C_{f}$ sa courbe représentative dans un repère d'unité graphique 4 c
         	
         	\[f'(x)=6e^{-2x}-4(3x - 1)e^{-2x}=-12xe^{-2x}+10e^{-2x}=2\left(-6x + 5\right) e^{-2x}\]
         	\[\textcolor{green}{\boxed{f'(x)=2\left(-6x + 5\right) e^{-2x}}}\]
-Le signe de  f' dépend de $-6x + 5$ or $\forall x\in]-\infty ; 0]$, f'(x)>0 donc f est croissant sur $]-\infty ; 0]$
-			%\item Si $x \leq 0, f(x)=\fra$
+Le signe de  f' dépend de $-6x + 5$ or $\forall x\in]-\infty ; 0]$, -6x + 5>0 donc f est croissant sur $]-\infty ; 0]$
+			\item Si $x > 0, f(x)=\frac{x\ln x}{1 + x}$, montrons que $f'(x)=\frac{g(x)}{(x + 1)^{2}}$
+			\[f'(x)=\frac{(x\ln x)'(1 + x)-(1 + x)'(x\ln x)}{ \left( 1 + x\right)^{2} }=\frac{(\ln x + 1)(1 + x)-x\ln x}{ \left( 1 + x\right)^{2} }\]
+			\[f'(x)=\frac{(\ln x + x\ln x + 1 + x)-x\ln x}{ \left( 1 + x\right)^{2} } =\frac{1 + x + \ln x}{\left( 1 + x\right)^{2}} \]
+			\[\textcolor{green}{\boxed{f'(x)=\frac{g(x)}{\left( 1 + x\right)^{2}}}}\]
+Le signe de f' dépend de $g(x)$ or, d'après la partie A, 
+
+$\forall x\in]0 ; \alpha[$, $g(x) < 0$ donc f est décroissant sur $]0 ; \alpha[$ \textbf{et} 
+
+$\forall x\in]\alpha ; +\infty[$, $g(x) > 0$ donc f est croissant sur $]\alpha ; +\infty[$
+
+%\textbf{En résumé:}
+
+%\textcolor{green}{sur $]-\infty ; 0]$ f'>0 donc f est croissant \\sur $]0 ; \alpha[$ f'<0 donc f est décroissant\\sur $]\alpha ; +\infty[$ f'>0 donc f est croissant}
         	%\[
 %f(x) = \begin{cases} 
  % 2(3x - 1)e^{-2x} + 2, & \text{si } x \leq 0 \\
