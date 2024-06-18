@@ -832,6 +832,9 @@ Soit $\beta < 0$, on note $A(\beta)$ l'aire de la partie du plan délimitée par
     \[F(x) = \left( -3x - \frac{1}{2}\right) e^{-2x} \]
     \[\text{ donc }A(\beta)=\int_{\beta}^{0}f(x)=\left[ \left( -3x - \frac{1}{2}\right) e^{-2x} + 2x\right]_{\beta}^{0}=-\frac{1}{2}+\left( 3\beta + \frac{1}{2}\right) e^{-2\beta} - 2\beta\]
      \[\textcolor{green}{\boxed{A(\beta)=-\frac{1}{2}+\left( 3\beta + \frac{1}{2}\right) e^{-2\beta} - 2\beta}}\]
-%    \item[3.] Calculer sa limite en $-\infty$. \textbf{0,25 pt}
+    \item[3.] Calculons sa limite en $-\infty$. \textbf{0,25 pt}
+    \[\lim_{x \to -\infty}A(\beta)=-\frac{1}{2}+\left( 3\beta + \frac{1}{2}\right) e^{-2\beta} - 2\beta=-\frac{1}{2}+\lim_{x \to -\infty}\left( 3\beta + \frac{1}{2}\right) e^{-2\beta} - 2\beta\]
+    \[\lim_{x \to -\infty}\left( 3\beta + \frac{1}{2}\right) e^{-2\beta} - 2\beta=\lim_{x \to -\infty}3\beta e^{-2\beta} + \frac{1}{2}e^{-2\beta}  - 2\beta=\lim_{x \to -\infty}\beta\left( 3e^{-2\beta} + \frac{1}{2\beta}e^{-2\beta}  - 2\right)=-\infty\]
+         \[\textcolor{green}{\boxed{\lim_{x \to -\infty}A(\beta)=-\infty}}\]
 \end{itemize}
 \end{document}
