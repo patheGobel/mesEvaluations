@@ -725,7 +725,21 @@ On note $C_{f}$ sa courbe représentative dans un repère d'unité graphique 4 c
          \[\lim_{x \to -\infty}\frac{f(x)}{x}=\lim_{x \to -\infty}\frac{2(3x - 1)e^{-2x} + 2}{x}=\lim_{x \to -\infty}\frac{x\left[ 2\left( 3 - \frac{1}{x}\right)e^{-2x} + \frac{2}{x}\right] }{x}=\lim_{x \to -\infty}2e^{-2x}\left( 3 - \frac{1}{x}\right) + \frac{2}{x}\]
          \[\lim_{x \to -\infty}\frac{f(x)}{x}=+\infty\]
          \textcolor{green}{\boxed{\text{En $-\infty$:(Cf) admet une branche parabolique de diretion (OJ)}}}
-        %\item[4.] Étudions le sens de variation de $f$ sur $\mathbb{R}$ (on montrera que pour tout $x > 0$, $f'(x) = \frac{g(x)}{(x + 1)^{2}}$). \textbf{0,5 pt}
+        \item[4.] Étudions le sens de variation de $f$ sur $\mathbb{R}$ (on montrera que pour tout $x > 0$, $f'(x) = \frac{g(x)}{(x + 1)^{2}}$). \textbf{0,5 pt}
+        %Calculons les dérivées de f
+        \begin{itemize}
+        	\item Si $x \leq 0, f(x)=2(3x - 1)e^{-2x} + 2$
+        	
+        	\[f'(x)=6e^{-2x}-4(3x - 1)e^{-2x}=-12xe^{-2x}+10e^{-2x}=2\left(-6x + 5\right) e^{-2x}\]
+        	\[\textcolor{green}{\boxed{f'(x)=2\left(-6x + 5\right) e^{-2x}}}\]
+Le signe de  f' dépend de $-6x + 5$ or $\forall x\in]-\infty ; 0[$, f'(x)>0 donc f est croissant sur $]-\infty ; 0[$
+        	%\[
+%f(x) = \begin{cases} 
+ % 2(3x - 1)e^{-2x} + 2, & \text{si } x \leq 0 \\
+  %\frac{x\ln x}{1 + x}, & \text{si } x > 0 
+%\end{cases}
+%^\]
+        \end{itemize}
        % \item[5.] Dresser le tableau de variation de $f$. \textbf{0,5 pt}
         %\item[6.] Montrer que $f(\alpha) = -\alpha$ puis déterminer l'intersection de $C_f$ avec les axes. \textbf{0,5 pt}
        % \item[7.] Tracer $C_f$. \textbf{0,75 pt}
