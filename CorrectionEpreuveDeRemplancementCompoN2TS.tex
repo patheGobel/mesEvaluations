@@ -825,7 +825,13 @@ Soit $\beta < 0$, on note $A(\beta)$ l'aire de la partie du plan délimitée par
     b = -\frac{1}{4}
     \end{cases}
     \]
-%    \item[2.] Calculer $A(\beta)$. \textbf{0,5 pt}
+    \[F(x) =\left( -3x - \frac{1}{2}\right) e^{-2x}\]
+    \item[2.] Calculons $A(\beta)$. \textbf{0,5 pt}
+    Comme $\beta < 0$ donc $f(x)=2(3x - 1)e^{-2x} + 2$
+    \[A(\beta)=\int_{\beta}^{0}f(x)=\int_{\beta}^{0}\left[ 2(3x - 1)e^{-2x} + 2\right]=\int_{\beta}^{0}F(x) \text{ d'après ce qui précède, la primitive de f est }\]
+    \[F(x) = \left( -3x - \frac{1}{2}\right) e^{-2x} \]
+    \[\text{ donc }A(\beta)=\int_{\beta}^{0}f(x)=\left[ \left( -3x - \frac{1}{2}\right) e^{-2x} + 2x\right]_{\beta}^{0}=-\frac{1}{2}+\left( 3\beta + \frac{1}{2}\right) e^{-2\beta} - 2\beta\]
+     \[\textcolor{green}{\boxed{A(\beta)=-\frac{1}{2}+\left( 3\beta + \frac{1}{2}\right) e^{-2\beta} - 2\beta}}\]
 %    \item[3.] Calculer sa limite en $-\infty$. \textbf{0,25 pt}
 \end{itemize}
 \end{document}
