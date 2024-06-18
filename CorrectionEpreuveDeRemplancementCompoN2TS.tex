@@ -747,7 +747,45 @@ $\forall x\in]\alpha ; +\infty[$, $g(x) > 0$ donc f est croissant sur $]\alpha ;
 
 \textcolor{green}{sur $]-\infty ; 0]$ f'>0 donc f est croissant \\sur $]0 ; \alpha[$ f'<0 donc f est décroissant\\sur $]\alpha ; +\infty[$ f'>0 donc f est croissant}
         \end{itemize}
-       % \item[5.] Dresser le tableau de variation de $f$. \textbf{0,5 pt}
+        \item[5.] Dressons le tableau de variation de $f$. \textbf{0,5 pt}
+        \begin{center}
+        \definecolor{cqcqcq}{rgb}{0.7529411764705882,0.7529411764705882,0.7529411764705882}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+%\draw [color=cqcqcq,, xstep=1cm,ystep=1cm] (-7,-10) grid (-22,17);
+\clip(-22,-5) rectangle (12,10);
+\draw [line width=2pt] (-23,8)-- (-7,8); %première ligne A(-22,8)---B(-7,8)
+\draw [line width=2pt] (-22,6)-- (-7,6); %deuxième ligne
+\draw [line width=2pt] (-22,4)-- (-7,4); %troisième ligne
+\draw [line width=2pt] (-22,-2)-- (-7,-2);%dernière ligne
+\draw [line width=2pt] (-22,-2)-- (-22,8); %première colonne
+\draw [line width=2pt] (-19,8)-- (-19,-2); %deuxième colone
+\draw [line width=2pt] (-15,6)-- (-15,4); %troisième colonne
+\draw [line width=2pt] (-11,6)-- (-11,-2); %quatrième colonne
+\draw [line width=2pt] (-7,8)-- (-7,-2); %cinquième colonne
+\draw (-21,1.5) node[anchor=north west] {$f(x)$};
+\draw (-21,5.5) node[anchor=north west] {$f'(x)$};
+\draw (-21,7) node[anchor=north west] {$x$};
+\draw (-19,7) node[anchor=north west] {$-\infty$};
+\draw (-15.3,6.5) node[anchor=north west] {0};
+\draw (-11.3,6.5) node[anchor=north west] {$\alpha$};
+\draw (-8,7) node[anchor=north west] {$+\infty$};
+%signe de la dérivé
+\draw (-17,5.3) node[anchor=north west] {$+$};
+%\draw (-15.3,5.3) node[anchor=north west] {$O$};
+\draw (-13.5,5.3) node[anchor=north west] {$-$};
+\draw (-11.25,5.3) node[anchor=north west] {\textbf{\textcolor{blue}{\textbf{0}}}};
+\draw (-10,5.3) node[anchor=north west] {$+$};
+
+\draw [->,line width=2pt] (-18.8,-1.2) -- (-15.24,3.9);
+\draw (-19,-1.2) node[anchor=north west] {\textbf{\textcolor{blue}{$-\infty$}}};
+\draw (-15.24,3.9) node[anchor=north west] {\textbf{\textcolor{blue}{\textbf{0}}}};
+
+\draw [->,line width=2pt] (-14.6,3.7) -- (-11.23,-1.2);
+\draw (-11.5,-1.2) node[anchor=north west] {\textbf{\textcolor{blue}{\textbf{f($\alpha$)}}}};
+\draw [->,line width=2pt] (-10.6,-1.3) -- (-8,3.5);
+\draw (-8,3.9) node[anchor=north west] {$+\infty$};
+\end{tikzpicture}
+        \end{center}
         %\item[6.] Montrer que $f(\alpha) = -\alpha$ puis déterminer l'intersection de $C_f$ avec les axes. \textbf{0,5 pt}
        % \item[7.] Tracer $C_f$. \textbf{0,75 pt}
     \end{itemize}
