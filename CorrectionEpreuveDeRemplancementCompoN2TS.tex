@@ -801,6 +801,51 @@ $\forall x\in]\alpha ; +\infty[$, $g(x) > 0$ donc f est croissant sur $]\alpha ;
         \end{itemize}
         \item[7.] Tracons $C_f$. \textbf{0,75 pt}
     \end{itemize}
+    \begin{center}
+    \begin{tikzpicture}
+    \begin{axis}[
+        axis lines = middle,
+        xlabel = $x$,
+        ylabel = {$f(x)$},
+        legend pos = north west,
+        grid = both,
+        width=12cm,
+        height=8cm,
+        samples=200,
+        domain=-2:2,
+        xmin=-2, xmax=2,  % Set x-axis limits
+        ymin=-5, ymax=5,  % Set y-axis limits
+        xtick={-2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2},  % More ticks on x-axis
+        ytick={-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5},  % Ticks on y-axis
+        yticklabel style={
+            /pgf/number format/fixed,
+            /pgf/number format/precision=2
+        },
+        xticklabel style={
+            /pgf/number format/fixed,
+            /pgf/number format/precision=2
+        },
+        clip=false  % Ensure that the axes extend beyond the plot
+    ]
+    \addplot[
+        domain=-2:0,
+        thick,
+        blue,
+    ]
+    {2 * (3 * x - 1) * exp(-2 * x) + 2};
+    \addlegendentry{$2(3x - 1)e^{-2x} + 2$}
+
+    \addplot[
+        domain=0.01:2,  % Avoid x = 0 to prevent log(0)
+        thick,
+        red,
+    ]
+    {(x * ln(x)) / (1 + x)};
+    \addlegendentry{$\frac{x \ln x}{1 + x}$}
+    
+    \end{axis}
+\end{tikzpicture}
+    \end{center}
 \end{itemize}
 \section*{\underline{Partie C:}}
 Soit $\beta < 0$, on note $A(\beta)$ l'aire de la partie du plan délimitée par les droites d'équations $x = \beta$, $x = 0$, $y = 0$ et la courbe $C_f$.
