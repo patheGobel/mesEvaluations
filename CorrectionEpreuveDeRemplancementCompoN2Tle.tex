@@ -943,50 +943,29 @@ Conclusion : \( \ln(x^{2}-6x+9) \) a comme axe de symétrie la droite verticale 
 \subsection*{\textcolor{green}{2) d - Tracé de \( Cf \) et de la tangente \( T \)}}
 
 \begin{center}
-\begin{tikzpicture}
+\definecolor{ffvvqq}{rgb}{1,0.3333333333333333,0}
+\definecolor{ccqqqq}{rgb}{0.8,0,0}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
 \begin{axis}[
-    axis lines = middle,
-    xlabel = $x$,
-    ylabel = $y$,
-    domain=-6:2,
-    samples=100,
-    width=12cm,
-    height=8cm,
-    xtick={-6,-4,-2,0,2},
-    ytick={-10, -5, 0, 5, 10},
-    legend pos=outer north east,
-    grid = major,
-    grid style={dashed, gray!30}
-]
-
-% Tracé de la courbe Cf
-\addplot [
-    domain=-6:2, 
-    samples=100, 
-    color=blue,
-    thick
-] {ln(x^2 - 6*x + 9)};
-\addlegendentry{$f(x) = \ln(x^2 - 6x + 9)$}
-
-% Tracé de la tangente T
-\addplot [
-    domain=-6:2, 
-    samples=100, 
-    color=red,
-    dashed,
-    thick
-] {x + 2*ln(2)};
-\addlegendentry{Tangente $y =-\frac{2}{3} x + 2\ln(3)$}
-
-% Tracé de la droite x = -2
-\addplot [
-    domain=-10:10,
-    samples=2,
-    color=green,
-    dashed
-] coordinates {(-2,-10) (-2,10)};
-\addlegendentry{Symétrie $x = -2$}
-
+x=1cm,y=1cm,
+axis lines=middle,
+ymajorgrids=true,
+xmajorgrids=true,
+xmin=-6.030029681249132,
+xmax=14.459865789133975,
+ymin=-4.612447466339683,
+ymax=5.522883544113272,
+xtick={-6,-5,...,14},
+ytick={-4,-3,...,5},]
+\clip(-6.030029681249132,-4.612447466339683) rectangle (14.459865789133975,5.522883544113272);
+\draw[line width=2pt,color=ccqqqq,smooth,samples=100,domain=-6.030029681249132:14.459865789133975] plot(\x,{ln(((\x)-3)^(2))});
+\draw [line width=2pt] (3,-4.612447466339683) -- (3,5.522883544113272);
+\draw[line width=2pt,color=ffvvqq,smooth,samples=100,domain=-6.030029681249132:14.459865789133975] plot(\x,{0-(2/3)*(\x)+2*ln(3)});
+\begin{scriptsize}
+%\draw[color=ccqqqq] (-5.827660343270039,4.570061244461704) node {$g$};
+%\draw[color=black] (3.329552200283892,5.312082150385049) node {$eq1$};
+%\draw[color=ffvvqq] (-4.731493095883288,5.312082150385049) node {$h$};
+\end{scriptsize}
 \end{axis}
 \end{tikzpicture}
 \end{center}
